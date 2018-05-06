@@ -1,0 +1,889 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	
+<!-- Mirrored from blogs.pingpoet.com/overflow/archive/2005/06/02/2449.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 May 2018 21:33:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	Less MSI&eacute;rables: A tool to Extract the contents of an .msi File
+</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="author" content="Scott Willeke" /><meta name="Generator" content="Subtext Version 1.9.4.78" /><link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="../../../../Rss.aspx" /><link type="text/css" rel="stylesheet" href="../../../../../skins/_System/csharp.css"></link>
+<link type="text/css" rel="stylesheet" href="../../../../../skins/_System/commonstyle.css"></link>
+<link type="text/css" rel="stylesheet" href="../../../../../skins/_System/commonlayout.css"></link>
+<link type="text/css" rel="stylesheet" title="fixed" href="../../../../../Skins/Piyo/piyo-fixed.css"></link>
+<link type="text/css" rel="stylesheet" title="elastic" href="../../../../../Skins/Piyo/piyo-elastic.css"></link>
+<link media="print" type="text/css" rel="stylesheet" href="../../../../../Skins/Piyo/print.css"></link>
+<link id="MainStyle" type="text/css" rel="stylesheet" href="../../../../../skins/Piyo/style.css" /><link id="CustomCss" type="text/css" rel="stylesheet" href="../../../../customcss.css" /><link id="Rsd" rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../rsd.xml.ashx" /><link id="AtomLink" title="RSS" type="application/rss+xml" rel="alternate" href="../../../../Rss.aspx" /><script src="../../../../../Scripts/common.js" type="text/javascript"></script><script src="../../../../../Scripts/tableEffects.js" type="text/javascript"></script><script src="../../../../../Scripts/BlogInfo.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var subtextAllowedHtmlTags = ['a', 'b', 'strong', 'blockquote', 'i', 'em', 'u', 'strike', 'super', 'sub', 'code'];
+			var subtextBlogInfo = new blogInfo('../../../../../index.html', '/overflow/" />');
+		</script>
+		<script type="text/javascript" src="../../../../../Skins/Piyo/Scripts/piyo.js"></script>
+<script type="text/javascript" src="../../../../../Skins/Piyo/Scripts/lightbox.js"></script>
+<script type="text/javascript">
+ var blogTool = "Subtext"
+ var blogURL = "../../../../index.html";
+ var blogTitle   = "overflow";
+ var postTitle = "Less MSI&eacute;rables: A tool to Extract the contents of an .msi File";
+ var postURL = "2449.html";
+ var commentAuthorFieldName = "";
+ var commentTextFieldName = "";
+ var commentButtonName  = "";
+ var commentFormID = "Form1";
+ var commentAuthorLoggedIn = false;
+ var cocomment_force  = false;
+</script>
+<script type="text/javascript" src="http://www.cocomment.com/js/cocomment.js">
+</script></head>
+	<body>
+		<form name="Form1" method="post" action="http://blogs.pingpoet.com/overflow/archive/2005/06/02/2449.aspx" id="Form1">
+<div>
+<input type="hidden" name="PostComment_ascx_ctl00_answer" id="PostComment_ascx_ctl00_answer" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../../../../WebResourceca6f.js?d=vT1yz21OBJxBgCt3OM9vt4Y4jX88BPYiwkNtAfZuXqXphi6ccxTRjVFJnDscDk1pKotIsoE5gziAablpwXXNVTZ1pNg1&amp;t=635294807132453548" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWTgL+raDpAgL+3ZGoBALZ0YTdDQL4oNG+CQLTntyYCQKKxo21BQLluYDqDgLUw76tDQKvt7HiBgKm1I3fAwKByICUDQL+3YXIBALZ0fj8DQL4oMXeCQLTntC4CQKKxoHVBQLlufSJDwLUw7LNDQKvt6WCBwKm1IH/AwKByPSzDQL+3anhBALZ0ZyWDgL4oOn3CQLTnvTRCQKKxqXuBQLluZijDwLUw9bmDQKvt8mbBwKm1KWYBAKByJjNDQL+3d2BBQLZ0dC2DgL4oJ2YCgLypqMaApSI0ZgDAvLJwI4NAvLJ/OkFAvLJ6MQOAvLJhKAHAvLJsJsIAvLJ7KMNAvLJmJ8GArGq2egDArGq9cMEArGq4b4NArGqnZoGArGqifUOArGqpdAHArGq0YsIArGqzWYCsaq5jwYCsarV6g4CqpOn8wkCqpPTrgICqpPPiQsCqpP75AMCqpOXwAQCqpODuw0CqpO/lgYCqpOr8Q4CqpOHmgwCqpOz9QQCz4SF3gcCz4SxuQgCz4StlAECz4TZzwkCz4T1qgICz4ThhQsCz4Sd4QMCz4SJ3AQCz4Tl5AkCz4SRwAIC4O3iqA0C4O2ehAYC4O2K/w4C4O2m2gcC4O3StQganNBEGFMs8mz9ZVTiJvG4qUNQXw==" />
+</div>
+			<!--
+Skin inspired from Blojsom 2.0 Theme
+Name:     Asual
+Author:   Rostislav Hristov
+URL:      www.asual.com
+Date:     1 October 2004
+
+and later adapted for the SubText blogging platform by Simone Chiaretta www.piyodesign.it
+-->
+
+
+
+
+<div id="main">
+
+	<div id="header">
+		
+<div id="name">
+	<h1><a id="Header1_HeaderTitle" title="The Title Of This Blog." href="../../../../Default.html">overflow</a></h1>
+
+	<h2>Too many thoughts to go away quietly</h2>
+</div>
+<div id="controls">
+	
+posts - 288, comments - 27, trackbacks - 325
+	<div id="switcher">
+			<script type="text/javascript">
+				writeSwitcher();
+			</script>
+			<noscript>
+				<p></p>
+			</noscript>
+	</div>
+</div>
+		
+	</div>
+	<div id="contentHeadLeft"><div id="contentHeadRight"><div id="contentHeadCenter"></div></div></div>
+		<div id="contentBodyLeft">
+		<div id="contentBodyRight">
+			<div id="contentBodyCenter">
+				<div id="content">
+				
+					<div id="entries">
+					
+					
+
+<div class="previousNext">
+	<a id="viewpost_ascx_PreviousNext_PrevLink" title="previous post" href="../../11/15/14994.html"><< Axosoft Switches to ActiveReports for .NET as &quot;a far superior alternative to Crystal&quot;</a>
+	<span id="viewpost_ascx_PreviousNext_LeftPipe" class="prevNextSeparator"> | </span>
+	<a id="viewpost_ascx_PreviousNext_MainLink" href="../../../../Default.html">Home</a>
+	<span id="viewpost_ascx_PreviousNext_RightPipe" class="prevNextSeparator"> | </span>
+	<a id="viewpost_ascx_PreviousNext_NextLink" title="next post" href="../11/2837.html">Less MSI&#233;rables Update >></a>
+</div>
+
+
+<div class="entry">
+	<h4><a id="viewpost_ascx_TitleUrl" title="Title of this entry." href="2449.html">Less MSI&eacute;rables: A tool to Extract the contents of an .msi File</a></h4>
+	<p>
+I'm not a fan of Microsoft's .msi installer files. They're <em>slow</em>, they don't let me pick start menu groups, and they are a major overkill for lots of tiny program installations that I use where a simple <a href="http://www.rarlabs.com/rar_archiver.htm" alt="WinRAR">rar</a> file (okay zip would work too) would be much more suitable. So sometime last year I spent a night hacking together a simple tool that lets me take these miserable .msi files and extract their contents. Since others may find it useful too, I figured I'd put it out here.
+</p>
+<p>
+It works from the command line, has a simple form that lets you extract files and view msi tables. Let me warn you the first time you run it, it will add an &quot;Extract&quot; item to the right-click menu in explorer when right-clicking on .msi files (the added registry entry is made at \\\Registry\HKEY_CLASSES_ROOT\Msi.Package\shell\Extract\command\). Thanks to the <a href="http://sourceforge.net/projects/wix/" title="Windows Installer XML (WiX)">WiX project</a> for the handy utility classes for working with msi files and awesome reference on msi internals.
+</p>
+
+<div>
+<img src="../../../../pubfiles/lessmsi.png" alt="Screenshot of Less MSI&eacute;rables: A tool to Extract the contents of an .msi File" />
+</div>
+
+You can run it from the command line using the syntax: 
+<pre>
+lessmsi -x &lt;inputfile&gt; &lt;output directory&gt;
+
+Example:
+lessmsi -x "C:\Downloads\ActiveReports for .NET Setup.msi" C:\junk\
+</pre>
+
+<p style="color:red">2005-Jun-11: Updated to work on .NET v1.1 framework.</p>
+<p style="color:red">2005-Nov-15: <a href="../../11/16/14995.html">Updated with new features & fixes</a>.</p>
+You can download it at <A href="../../../../pubfiles/Lessmsierables-20050611.zip" title="Download">here</a> and consider it licensed under <a href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a>.
+
+
+		<p class="post">
+			posted @ Thursday, June 02, 2005 1:09 AM
+		</p>
+</div>
+	<a href="javascript:window.print();" class="printIcon"><span>Print</span></a>
+	<link rel="pingback" href="../../../../Services/Pingback.html"></link>
+	
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+rdf:about="http://blogs.pingpoet.com/overflow/archive/2005/06/02/2449.aspx"
+dc:identifier="http://blogs.pingpoet.com/overflow/archive/2005/06/02/2449.aspx"
+dc:title="Less MSI&eacute;rables: A tool to Extract the contents of an .msi File"
+trackback:ping="http://blogs.pingpoet.com/overflow/services/trackbacks/2449.aspx" />
+</rdf:RDF>
+-->
+<span id='apnlCommentsWrapper$RBS_Holder'><span id="apnlCommentsWrapper" AjaxCall="async">
+
+<a name="feedback" title="feedback anchor"></a>
+<div id="comments">
+	<h3>Comments on this entry:</h3>
+	<p></p>
+	
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#292">#</a>&nbsp;<a name="292"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl00_NameLink" title="PingBack/TrackBack" href="../../../../../vbguru/index-2.html" target="_blank">Luc</a> at 6/3/2005 12:11 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Wow, very slick little tool! Quite nicely done I might add too. :) Thanks for sharing!
+					</p>
+					<a id="Comments_ascx_CommentList_ctl00_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl00$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#294">#</a>&nbsp;<a name="294"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl01_NameLink" title="PingBack/TrackBack" href="http://www.test.com/" target="_blank">Anonymouse</a> at 6/10/2005 7:16 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Hi, me and my friend tried to use this tool after installing <a title="Microsoft .NET" href="http://en.wikipedia.org/wiki/Microsoft_.NET" >.NET</a> framework 2.0 beta, which seems to be required as it doesn't run on 1.1 with us.<br><br>Whenever we try to open an .MSI package, we receive the following error:<br><br>&quot;ERROR:Failed to open file. n files found&quot;<br><br>Any idea what could be the cause of this? We both run Windows XP.<br><br>Thanks
+					</p>
+					<a id="Comments_ascx_CommentList_ctl01_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl01$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Less MSI" href="2449.html#295">#</a>&nbsp;<a name="295"></a>Less MSI
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl02_NameLink" title="PingBack/TrackBack" href="../../../0001/01/01/2837.html" target="_blank">overflow</a> at 6/11/2005 7:12 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						
+					</p>
+					<a id="Comments_ascx_CommentList_ctl02_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl02$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#296">#</a>&nbsp;<a name="296"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl03_NameLink" title="PingBack/TrackBack" href="../../../../index.html" target="_blank">Scott Willeke</a> at 6/11/2005 8:36 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						The problems should be resolved with the latest one now. Download it at the updated link above. Sorry about the confusion!
+					</p>
+					<a id="Comments_ascx_CommentList_ctl03_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl03$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#297">#</a>&nbsp;<a name="297"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl04_NameLink" title="PingBack/TrackBack" target="_blank">Anonymouse</a> at 6/13/2005 4:29 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Excellent all works now!!!!!!<br><br>Only feedback i have: create a Deselect All and Select All button ;)
+					</p>
+					<a id="Comments_ascx_CommentList_ctl04_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl04$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#300">#</a>&nbsp;<a name="300"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl05_NameLink" title="PingBack/TrackBack" href="http://community.sgdotnet.org/blogs/kitkai" target="_blank">Loke Kit Kai</a> at 6/29/2005 5:20 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						I also wish for a deselect all and select all button too
+					</p>
+					<a id="Comments_ascx_CommentList_ctl05_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl05$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#301">#</a>&nbsp;<a name="301"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl06_NameLink" title="PingBack/TrackBack" href="http://community.sgdotnet.org/blogs/kitkai" target="_blank">Loke Kit Kai</a> at 6/29/2005 5:27 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Had an exception. Pasted below...<br><br>See the end of this message for details on invoking <br>just-in-time (JIT) debugging instead of this dialog box.<br><br>************** Exception Text **************<br>System.ArgumentException: '13' is not a valid value for 'value'. 'value' should be between 'minimum' and 'maximum'.<br>   at System.Windows.Forms.ProgressBar.set_Value(Int32 value)<br>   at Willeke.Scott.LessMSIerables.ExtractionProgressDialog.UpdateProgress(ExtractionProgress progress)<br>   at Willeke.Scott.LessMSIerables.ExtractionProgressDialog.UpdateProgress(IAsyncResult result)<br>   at Willeke.Scott.LessMSIerables.ExtractionProgress.ReportProgress(ExtractionActivity activity, String currentFileName, Int32 filesExtractedSoFar)<br>   at Willeke.Scott.LessMSIerables.Wixtracts.ExtractFiles(FileInfo msi, DirectoryInfo outputDir, MsiFile[] filesToExtract, AsyncCallback progressCallback)<br>   at Willeke.Scott.LessMSIerables.MainForm.btnExtract_Click(Object sender, EventArgs e)<br>   at System.Windows.Forms.Control.OnClick(EventArgs e)<br>   at System.Windows.Forms.Button.OnClick(EventArgs e)<br>   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)<br>   at System.Windows.Forms.Control.WmMouseUp(Message&amp; m, MouseButtons button, Int32 clicks)<br>   at System.Windows.Forms.Control.WndProc(Message&amp; m)<br>   at System.Windows.Forms.ButtonBase.WndProc(Message&amp; m)<br>   at System.Windows.Forms.Button.WndProc(Message&amp; m)<br>   at System.Windows.Forms.ControlNativeWindow.OnMessage(Message&amp; m)<br>   at System.Windows.Forms.ControlNativeWindow.WndProc(Message&amp; m)<br>   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)<br><br><br>************** Loaded Assemblies **************<br>mscorlib<br>    Assembly Version: 1.0.5000.0<br>    Win32 Version: 1.1.4322.2032<br>    CodeBase: file:///c:/windows/microsoft.net/framework/v1.1.4322/mscorlib.dll<br>----------------------------------------<br>lessmsi<br>    Assembly Version: 1.0.1988.32288<br>    Win32 Version: 1.0.1988.32288<br>    CodeBase: file:///E:/Development%20Resources/Sharepoint/Lessmsierables-20050611/LessMSIerables/lessmsi.exe<br>----------------------------------------<br>System.Windows.Forms<br>    Assembly Version: 1.0.5000.0<br>    Win32 Version: 1.1.4322.2032<br>    CodeBase: file:///c:/windows/assembly/gac/system.windows.forms/1.0.5000.0__b77a5c561934e089/system.windows.forms.dll<br>----------------------------------------<br>System<br>    Assembly Version: 1.0.5000.0<br>    Win32 Version: 1.1.4322.2032<br>    CodeBase: file:///c:/windows/assembly/gac/system/1.0.5000.0__b77a5c561934e089/system.dll<br>----------------------------------------<br>System.Drawing<br>    Assembly Version: 1.0.5000.0<br>    Win32 Version: 1.1.4322.2032<br>    CodeBase: file:///c:/windows/assembly/gac/system.drawing/1.0.5000.0__b03f5f7f11d50a3a/system.drawing.dll<br>----------------------------------------<br>wix<br>    Assembly Version: 2.0.2110.0<br>    Win32 Version: 2.0.2110.0<br>    CodeBase: file:///E:/Development%20Resources/Sharepoint/Lessmsierables-20050611/LessMSIerables/wix.DLL<br>----------------------------------------<br><br>************** JIT Debugging **************<br>To enable just in time (JIT) debugging, the config file for this<br>application or machine (machine.config) must have the<br>jitDebugging value set in the system.windows.forms section.<br>The application must also be compiled with debugging<br>enabled.<br><br>For example:<br><br>&lt;configuration&gt;<br>    &lt;system.windows.forms jitDebugging=&quot;true&quot; /&gt;<br>&lt;/configuration&gt;<br><br>When JIT debugging is enabled, any unhandled exception<br>will be sent to the JIT debugger registered on the machine<br>rather than being handled by this dialog.<br><br><br>
+					</p>
+					<a id="Comments_ascx_CommentList_ctl06_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl06$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#306">#</a>&nbsp;<a name="306"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl07_NameLink" title="PingBack/TrackBack" href="http://www.btsunattended.net/" target="_blank">B&#226;shrat the Sneaky</a> at 7/23/2005 2:36 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Thanks alot! I'll try it in a moment.<br><br>Why hasn't there always been such an application???!!!
+					</p>
+					<a id="Comments_ascx_CommentList_ctl07_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl07$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#307">#</a>&nbsp;<a name="307"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl08_NameLink" title="PingBack/TrackBack" href="http://www.btsunattended.net/" target="_blank">B&#226;shrat the Sneaky</a> at 7/23/2005 2:41 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Too bad... it did not work, or at least not with [url=<a target="_new" href="http://cdrom.amd.com/21860/updates/opteron_drivers/english/driverpack32.exe">http://cdrom.amd.com/21860/updates/opteron_drivers/english/driverpack32.exe</a>]this[/url] MSI installer.<br><br>It only gives the files necessary for the MSI setup; I can do this with 7-zip too...<br><br>Any clue what's going wrong?
+					</p>
+					<a id="Comments_ascx_CommentList_ctl08_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl08$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#308">#</a>&nbsp;<a name="308"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl09_NameLink" title="PingBack/TrackBack" href="../../../../../vbguru/index-2.html" target="_blank">Luc</a> at 7/25/2005 4:38 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Uh oh... what have you started here Scott? :)
+					</p>
+					<a id="Comments_ascx_CommentList_ctl09_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl09$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#309">#</a>&nbsp;<a name="309"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl10_NameLink" title="PingBack/TrackBack" href="../../../../index.html" target="_blank">overflow</a> at 7/25/2005 5:05 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						B&#226;shrat driverpack32.exe is not an msi file. I Used WinRAR to extract it, and other than a couple dll's (which are presumebly the drivers you're looking for) there only appeared to be an installer to install windows installer itself.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl10_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl10$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#310">#</a>&nbsp;<a name="310"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl11_NameLink" title="PingBack/TrackBack" href="../../../../index.html" target="_blank">overflow</a> at 7/25/2005 5:06 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						PPL: If you have problems please tell me the msi file you had problems with so I can try to reproduce to fix it.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl11_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl11$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#311">#</a>&nbsp;<a name="311"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl12_NameLink" title="PingBack/TrackBack" target="_blank">Tom</a> at 7/28/2005 12:06 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						When I run the program I do not see the scroll bars or the Extract button.  This is probably because I am using large (120 dpi) fonts, which can alter the placement of UI controls.  Also, after launching the program in GUI mode from the command prompt, ideally the command prompt would return immediately.  Currently, the command prompt returns only after exiting the application.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl12_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl12$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#318">#</a>&nbsp;<a name="318"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl13_NameLink" title="PingBack/TrackBack" target="_blank">FeuerFrei</a> at 8/9/2005 5:41 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Hi and well done for this tool !!<br><br>A bout the crash, there is a bug here : <br><br>_progressBar.Minimum = 0;<br>_progressBar.Maximum = progress.TotalFileCount;<br>_progressBar.Value = progress.FilesExtractedSoFar;<br><br>If you uncheck a file to be extracted then _progressBar.Value &gt; _progressBar.Maximum --&gt; crash<br><br>System.ArgumentException: '13' is not a valid value for 'value'. 'value' should be between 'minimum' and 'maximum'.<br>
+					</p>
+					<a id="Comments_ascx_CommentList_ctl13_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl13$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#319">#</a>&nbsp;<a name="319"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl14_NameLink" title="PingBack/TrackBack" target="_blank">FeuerFrei</a> at 8/9/2005 9:02 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Re,<br><br>I think there is a crash here :<br><br>public static void ExtractFiles(FileInfo msi, DirectoryInfo outputDir)<br>{<br>ExtractFiles(msi, outputDir, null, null);<br>}<br><br>[...]<br><br>ExtractionProgress progress = new ExtractionProgress(progressCallback, filesToExtract.Length);<br><br>If filesToExtract == null then filesToExtract.Length crashes
+					</p>
+					<a id="Comments_ascx_CommentList_ctl14_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl14$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Posted to the SMS email discussion list..." href="2449.html#320">#</a>&nbsp;<a name="320"></a>Posted to the SMS email discussion list...
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl15_NameLink" title="PingBack/TrackBack" href="http://myitforum.techtarget.com/blog/rtrent/archive/2005/08/12/12656.aspx" target="_blank">Rod Trent at myITforum.com</a> at 8/12/2005 12:42 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						
+					</p>
+					<a id="Comments_ascx_CommentList_ctl15_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl15$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Re: Everything" href="2449.html#332">#</a>&nbsp;<a name="332"></a>Re: Everything
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl16_NameLink" title="PingBack/TrackBack" target="_blank">David Leek</a> at 9/22/2005 12:51 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Excellent - worked first time for me.  And helped solve a problem I would have otherwise gone potty about.<br><br>Thanks!
+					</p>
+					<a id="Comments_ascx_CommentList_ctl16_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl16$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: New Version of MSI File Extraction " href="2449.html#346">#</a>&nbsp;<a name="346"></a>New Version of MSI File Extraction 
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl17_NameLink" title="PingBack/TrackBack" href="../../../0001/01/01/14995.html" target="_blank">overflow</a> at 11/16/2005 2:34 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						
+					</p>
+					<a id="Comments_ascx_CommentList_ctl17_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl17$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Microsoft Stand-Alone Device Emulator CTP" href="2449.html#351">#</a>&nbsp;<a name="351"></a>Microsoft Stand-Alone Device Emulator CTP
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl18_NameLink" title="PingBack/TrackBack" href="http://blogs.technet.com/klince/archive/2005/11/28/415225.aspx" target="_blank">Ken Lince - Partner Technology S</a> at 11/28/2005 11:21 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						I've been on the road quite a bit lately and doing a lot of talking about Exchange SP2 and all the great...
+					</p>
+					<a id="Comments_ascx_CommentList_ctl18_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl18$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#355">#</a>&nbsp;<a name="355"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl19_NameLink" title="PingBack/TrackBack" target="_blank">Rachit</a> at 12/19/2005 4:43 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Good
+					</p>
+					<a id="Comments_ascx_CommentList_ctl19_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl19$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Might be an idea..." href="2449.html#357">#</a>&nbsp;<a name="357"></a>Might be an idea...
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl20_NameLink" title="PingBack/TrackBack" target="_blank">GotenXiao</a> at 12/21/2005 8:00 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						...to not require <a title="Microsoft .NET" href="http://en.wikipedia.org/wiki/Microsoft_.NET" >.NET</a> &gt;.&gt;<br><br>Sorry, but any application that doesn't come with the DLLs neccesary to run it, or requires the installation of a 100+MB framework is gone off my system before you can say &quot;Microsoft sucks&quot;.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl20_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl20$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#358">#</a>&nbsp;<a name="358"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl21_NameLink" title="PingBack/TrackBack" href="../../../../index.html" target="_blank">Scott Willeke</a> at 12/23/2005 2:23 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						GotenXiao:<br>Firstly, I hate the fact that C# and the base class libraries have to be used with the &quot;all or nothing&quot; <a title="Microsoft .NET" href="http://en.wikipedia.org/wiki/Microsoft_.NET" >.NET</a> runtime and framework and would love to have a real linker that would link the minimum set of dependencies from the framework into a standalone executable (I have &lt;a href=&quot;<a target="_new" href="../../../2004/02/21/383.html">http://blogs.pingpoet.com/overflow/archive/2004/02/21/383.aspx&quot;&gt;said</a> all this before&lt;/a&gt;). However, in all fairness, the .NET Framework (v1.1 anyway)  is something like 22MB (not 100+), and there are non-Microsoft alternatives such as Novell's <a title="mono" href="http://go-mono.com/" target="_blank">mono</a> Project (www.mono-project.com). However, if you you're so adamant that &quot;microsoft sucks&quot;, why run windows (and therefore have any .msi files) at all (seriously)?
+					</p>
+					<a id="Comments_ascx_CommentList_ctl21_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl21$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#418">#</a>&nbsp;<a name="418"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl22_NameLink" title="PingBack/TrackBack" target="_blank">S&#233;rgio</a> at 1/18/2006 6:26 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						I had a problem to run this program, was show: Aplication Error (0xc0000135). Press ok to close.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl22_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl22$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#424">#</a>&nbsp;<a name="424"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl23_NameLink" title="PingBack/TrackBack" target="_blank">l00nytoons</a> at 2/7/2006 3:06 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Fantastic program! Thanks for taking the time to write it and for making it free too!
+					</p>
+					<a id="Comments_ascx_CommentList_ctl23_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl23$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Extract the content of a .MSI file" href="2449.html#427">#</a>&nbsp;<a name="427"></a>Extract the content of a .MSI file
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl24_NameLink" title="PingBack/TrackBack" href="http://demiliani.com/blog/archive/2006/02/08/3442.aspx" target="_blank">STEFANO DEMILIANI WeBlog</a> at 2/8/2006 5:30 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						
+					</p>
+					<a id="Comments_ascx_CommentList_ctl24_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl24$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Extract Contents from MSI Files" href="2449.html#428">#</a>&nbsp;<a name="428"></a>Extract Contents from MSI Files
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl25_NameLink" title="PingBack/TrackBack" href="http://dotnetjunkies.com/WebLog/thomasswilliams/archive/2006/02/08/135140.aspx" target="_blank">Thomas Williams</a> at 2/8/2006 9:25 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						I wrote ranted some time back, in relation to having sample code come wrapped up in an MSI package:...
+					</p>
+					<a id="Comments_ascx_CommentList_ctl25_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl25$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: Extracting stuff out of MSI files" href="2449.html#429">#</a>&nbsp;<a name="429"></a>Extracting stuff out of MSI files
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl26_NameLink" title="PingBack/TrackBack" href="http://blogs.finalbuilder.com/tate/archive/2006/02/10/785.aspx" target="_blank">Tate's Blog</a> at 2/9/2006 7:24 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						
+					</p>
+					<a id="Comments_ascx_CommentList_ctl26_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl26$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: thanks" href="2449.html#548">#</a>&nbsp;<a name="548"></a>thanks
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl27_NameLink" title="http://www.toolz4schoolz.com/" href="http://www.toolz4schoolz.com/" target="_blank">Jon Wright</a> at 3/16/2006 2:03 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Thanks for this. It saved me some messing around today.<br /><br />I also think it would benefit from select/deselect all buttons. And sorting columns. And using folder info for extracting. The last suggestion sounds a bit ridiculous but seriously I think it would be useful to do this in some rough and ready way.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl27_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl27$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#549">#</a>&nbsp;<a name="549"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl28_NameLink" title="http://blogs.pingpoet.com/overflow" href="../../../../index.html" target="_blank">Scott Willeke</a> at 3/16/2006 4:53 AM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						The latest version has all of those features. Check it out at the article <br /><a href="../../11/16/14995.html">New Version of MSI File Extraction &amp; Viewer Utility</a>. Let me know if I'm missing something.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl28_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl28$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#653">#</a>&nbsp;<a name="653"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl29_NameLink" title="Brad Hadden" target="_blank">Brad Hadden</a> at 3/31/2006 6:06 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Downloaded the source, built it, ran it, looked at an msi file that I had some questions about. Sweet!
+					</p>
+					<a id="Comments_ascx_CommentList_ctl29_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl29$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#656">#</a>&nbsp;<a name="656"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl30_NameLink" title="Diego" target="_blank">Diego</a> at 4/2/2006 1:12 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Hi, just a bit confusion. From the link:<br />http://blogs.pingpoet.com/overflow/pubfiles/lessmsierables-20051110.zip<br /><br />I still get a console application either in binary or from the C# source.<br /><br />I cannot get the WinForm application GUI.<br /><br />Why?<br /><br />Thanks.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl30_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl30$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#690">#</a>&nbsp;<a name="690"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl31_NameLink" title="http://blogs.pingpoet.com/overflow" href="../../../../index.html" target="_blank">Scott Willeke</a> at 4/9/2006 7:31 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Diego: I just tried it from that link and it works. Note that it is starting as a console application, but if no arguments are specified immediately opens up a windows form.
+					</p>
+					<a id="Comments_ascx_CommentList_ctl31_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl31$EditLink','')"></a>
+					</div>
+			</div>
+		
+			<div class="comment">
+					<h4>
+						<a title="permalink: re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File" href="2449.html#2244">#</a>&nbsp;<a name="2244"></a>re: Less MSI&amp;eacute;rables: A tool to Extract the contents of an .msi File
+					</h4>
+					<div class="info">Left by <a id="Comments_ascx_CommentList_ctl32_NameLink" title="PingBack/TrackBack" target="_blank">Eeyan</a> at 7/10/2005 4:05 PM</div>
+					<div class="gravatar"></div>
+					<div class="post">
+					<p>
+						Ability to sort columns would be great in the next version :)
+					</p>
+					<a id="Comments_ascx_CommentList_ctl32_EditLink" class="editlink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl32$EditLink','')"></a>
+					</div>
+			</div>
+		
+</div>
+
+<div class="commentsClosedMessage"><span style="font-style: italic;">Comments have been closed on this topic.</span></div></span></span>
+				
+					</div>
+					<div id="column">
+						
+						
+
+<div id="calendar">
+<table id="cal_entryCal" title="5/6/2018" cellspacing="0" cellpadding="0" title="Calendar" border="0" style="border-width:1px;border-style:solid;border-collapse:collapse;">
+	<tr><td colspan="7" style="background-color:Silver;"><table class="title" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+		<tr><td class="next" style="width:15%;"><a href="javascript:__doPostBack('cal$entryCal','V6665')" style="color:Black" title="Go to the previous month"><a href="../../../2018/04.html">&laquo;</a></a></td><td align="center" style="width:70%;">May</td><td class="next" align="right" style="width:15%;"><a href="javascript:__doPostBack('cal$entryCal','V6726')" style="color:Black" title="Go to the next month"><a href="../../../2018/06.html">&raquo;</a></a></td></tr>
+	</table></td></tr><tr><th class="day-header" align="center" abbr="Sunday" scope="col">Sun</th><th class="day-header" align="center" abbr="Monday" scope="col">Mon</th><th class="day-header" align="center" abbr="Tuesday" scope="col">Tue</th><th class="day-header" align="center" abbr="Wednesday" scope="col">Wed</th><th class="day-header" align="center" abbr="Thursday" scope="col">Thu</th><th class="day-header" align="center" abbr="Friday" scope="col">Fri</th><th class="day-header" align="center" abbr="Saturday" scope="col">Sat</th></tr><tr><td class="other-month" align="center" style="width:14%;">29</td><td class="other-month" align="center" style="width:14%;">30</td><td class="day" align="center" style="width:14%;">1</td><td class="day" align="center" style="width:14%;">2</td><td class="day" align="center" style="width:14%;">3</td><td class="day" align="center" style="width:14%;">4</td><td class="day" align="center" style="width:14%;">5</td></tr><tr><td class="today" align="center" style="width:14%;">6</td><td class="day" align="center" style="width:14%;">7</td><td class="day" align="center" style="width:14%;">8</td><td class="day" align="center" style="width:14%;">9</td><td class="day" align="center" style="width:14%;">10</td><td class="day" align="center" style="width:14%;">11</td><td class="day" align="center" style="width:14%;">12</td></tr><tr><td class="day" align="center" style="width:14%;">13</td><td class="day" align="center" style="width:14%;">14</td><td class="day" align="center" style="width:14%;">15</td><td class="day" align="center" style="width:14%;">16</td><td class="day" align="center" style="width:14%;">17</td><td class="day" align="center" style="width:14%;">18</td><td class="day" align="center" style="width:14%;">19</td></tr><tr><td class="day" align="center" style="width:14%;">20</td><td class="day" align="center" style="width:14%;">21</td><td class="day" align="center" style="width:14%;">22</td><td class="day" align="center" style="width:14%;">23</td><td class="day" align="center" style="width:14%;">24</td><td class="day" align="center" style="width:14%;">25</td><td class="day" align="center" style="width:14%;">26</td></tr><tr><td class="day" align="center" style="width:14%;">27</td><td class="day" align="center" style="width:14%;">28</td><td class="day" align="center" style="width:14%;">29</td><td class="day" align="center" style="width:14%;">30</td><td class="day" align="center" style="width:14%;">31</td><td class="other-month" align="center" style="width:14%;">1</td><td class="other-month" align="center" style="width:14%;">2</td></tr><tr><td class="other-month" align="center" style="width:14%;">3</td><td class="other-month" align="center" style="width:14%;">4</td><td class="other-month" align="center" style="width:14%;">5</td><td class="other-month" align="center" style="width:14%;">6</td><td class="other-month" align="center" style="width:14%;">7</td><td class="other-month" align="center" style="width:14%;">8</td><td class="other-month" align="center" style="width:14%;">9</td></tr>
+</table>
+</div>
+						
+<div id="links">
+<p><!-- begin eff badge -->
+<div align="center">
+<a href="http://www.eff.org/bloggers/join/">
+<img src="http://www.eff.org/bloggers/badges/blog_150x40.gif" 
+alt="Support Bloggers' Rights!"
+width="150" height="40" border="0" align="middle" /><br />
+<small>Support Bloggers' Rights!</small></a>
+</div>
+<!-- end eff badge -->
+
+<!-- start zFacts Debt Clock -->
+<table id="zDebtBox" style="border-color:rgb(40,80,144);" border=0>
+<tr><td style="background-color:rgb(241,247,251)"><a href="http://zfacts.com/p/461.html" id="zF05" style="color:rgb(40,80,144);font-size:13px;">National Debt Clock</a></td></tr>
+<tr><td style="background-color:#FFFFFF;">
+<script type="text/javascript">
+var zFontColor = "#CF1919"; // Debt Value Color
+var zFontSize = 14;// Debt Font Size
+</script>
+<script type="text/javascript" src="http://www.zfacts.com/giz/G05/debt.js"></script></td></tr>
+</table>
+<!-- end gizmo -->
+
+<!-- google analytics -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-149900-1";
+urchinTracker();
+</script></p>
+</div>
+						
+<div id="links">
+<div>
+<h5>About</h5>
+<ul>
+<li><a id="links_ContactLink" accesskey="9" class="rounded" title="Contact form." href="../../../../contact.html">Contact</a></li>
+<li><a id="links_Admin" class="rounded" title="Login Form." href="../../../../login.html">Login</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Not Visible -->
+
+
+
+
+
+						
+<div id="links">
+
+		<div>
+	
+			<h5>Archives</h5>
+			
+						<ul>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl01_Link" class="rounded" title="" href="../../../2007/05.html">May, 2007 (1)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl02_Link" class="rounded" title="" href="../../../2007/03.html">March, 2007 (1)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl03_Link" class="rounded" title="" href="../../../2006/10.html">October, 2006 (2)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl04_Link" class="rounded" title="" href="../../../2006/09.html">September, 2006 (2)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl05_Link" class="rounded" title="" href="../../../2006/08.html">August, 2006 (4)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl06_Link" class="rounded" title="" href="../../../2006/05.html">May, 2006 (2)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl07_Link" class="rounded" title="" href="../../../2006/04.html">April, 2006 (1)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl08_Link" class="rounded" title="" href="../../../2006/03.html">March, 2006 (3)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl09_Link" class="rounded" title="" href="../../../2006/02.html">February, 2006 (7)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl10_Link" class="rounded" title="" href="../../../2006/01.html">January, 2006 (3)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl11_Link" class="rounded" title="" href="../../12.html">December, 2005 (3)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl12_Link" class="rounded" title="" href="../../11.html">November, 2005 (4)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl13_Link" class="rounded" title="" href="../../10.html">October, 2005 (2)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl14_Link" class="rounded" title="" href="../../09.html">September, 2005 (6)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl15_Link" class="rounded" title="" href="../../08.html">August, 2005 (1)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl16_Link" class="rounded" title="" href="../../07.html">July, 2005 (4)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl17_Link" class="rounded" title="" href="../../06.html">June, 2005 (3)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl18_Link" class="rounded" title="" href="../../05.html">May, 2005 (5)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl19_Link" class="rounded" title="" href="../../04.html">April, 2005 (3)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl20_Link" class="rounded" title="" href="../../03.html">March, 2005 (5)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl21_Link" class="rounded" title="" href="../../02.html">February, 2005 (5)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl22_Link" class="rounded" title="" href="../../01.html">January, 2005 (10)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl23_Link" class="rounded" title="" href="../../../2004/12.html">December, 2004 (4)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl24_Link" class="rounded" title="" href="../../../2004/11.html">November, 2004 (8)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl25_Link" class="rounded" title="" href="../../../2004/10.html">October, 2004 (12)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl26_Link" class="rounded" title="" href="../../../2004/09.html">September, 2004 (17)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl27_Link" class="rounded" title="" href="../../../2004/08.html">August, 2004 (14)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl28_Link" class="rounded" title="" href="../../../2004/07.html">July, 2004 (26)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl29_Link" class="rounded" title="" href="../../../2004/06.html">June, 2004 (11)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl30_Link" class="rounded" title="" href="../../../2004/05.html">May, 2004 (6)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl31_Link" class="rounded" title="" href="../../../2004/04.html">April, 2004 (6)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl32_Link" class="rounded" title="" href="../../../2004/03.html">March, 2004 (14)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl33_Link" class="rounded" title="" href="../../../2004/02.html">February, 2004 (36)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl34_Link" class="rounded" title="" href="../../../2004/01.html">January, 2004 (41)</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl01_LinkList_ctl35_Link" class="rounded" title="" href="../../../2003/12.html">December, 2003 (16)</a></li>
+					
+						</ul>
+					
+	
+			<h5>Post Categories</h5>
+			
+						<ul>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl01_Link" class="rounded" title="" href="../../../../category/14.html">Books</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl02_Link" class="rounded" title="" href="../../../../category/11.html">Cool Software</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl03_Link" class="rounded" title="" href="../../../../category/8.html">Misc</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl04_Link" class="rounded" title="" href="../../../../category/29.html">Open Source</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl05_Link" class="rounded" title="" href="../../../../category/7.html">Political</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl06_Link" class="rounded" title="" href="../../../../category/6.html">Programming</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl07_Link" class="rounded" title="" href="../../../../category/5.html">Programming .NET</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl08_Link" class="rounded" title="" href="../../../../category/48.html">Quotations</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl02_LinkList_ctl09_Link" class="rounded" title="" href="../../../../category/10.html">Technology</a></li>
+					
+						</ul>
+					
+	
+			<h5>other stuff</h5>
+			
+						<ul>
+					
+		    			<li><a id="column_Categories_CatList_ctl03_LinkList_ctl01_Link" class="rounded" title="" href="http://www.amazon.com/gp/registry/registry.html/102-4741750-5566502?%5Fencoding=UTF8&amp;id=2Z9VWK58AXEJL">amazon wish list</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl03_LinkList_ctl02_Link" class="rounded" title="" href="http://scott.willeke.com/">scott.willeke.com</a></li>
+					
+		    			<li><a id="column_Categories_CatList_ctl03_LinkList_ctl03_Link" class="rounded" title="" rel="external" href="http://www.macworthington.com/">The Art of Mac Worthington</a></li>
+					
+						</ul>
+					
+	
+			<h5>Programming</h5>
+			
+						<ul>
+					
+		    			<li><a id="column_Categories_CatList_ctl04_LinkList_ctl01_Link" class="rounded" title="" rel="external" href="http://www.datadynamics.com/">Data Dynamics</a></li>
+					
+						</ul>
+					
+	
+		</div>
+	
+
+<div>
+	<h5>Syndication:</h5>
+	<p><a id="column_links_Syndication" class="rounded" title="Subscribe to this feed." href="../../../../Rss.aspx">RSS</a> <a id="column_links_AtomLink" class="rounded" title="Subscribe to this feed." href="../../../../Atom.aspx">ATOM</a></p>
+</div>
+
+<!-- Not Visible -->
+
+
+
+
+
+
+
+</div>
+						<div id="subtext">
+							<p><a id="Hyperlink2" title="Click here to visit the homepage of the SubText project" href="http://sourceforge.net/projects/subtext/"><img title="Click here to visit the homepage of the SubText project" src="../../../../../images/PoweredBySubtext85x33.png" style="border-width:0px;" /></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<div id="contentFootLeft"><div id="contentFootRight"><div id="contentFootCenter"></div></div></div>
+
+	<div id="Footer">
+		
+<div id="footer">
+	<p id="copyright">&copy; Scott Willeke</p>
+	<p id="info">Theme by <a href="http://www.piyodesign.it/" title="Click here to visit the website of PiyoDesign">PiyoDesign</a>. Valid <a href="http://validator.w3.org/check/referer" title="Click here to validate the XHTML code of this page at W3.org">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Click here to validate the CSS code of this page at W3.org">CSS</a>.</p>
+</div>
+	</div>
+	
+</div>
+
+		
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+	</body>
+
+<!-- Mirrored from blogs.pingpoet.com/overflow/archive/2005/06/02/2449.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 May 2018 21:33:26 GMT -->
+</html>

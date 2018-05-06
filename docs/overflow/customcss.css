@@ -1,0 +1,93 @@
+/* Code */
+pre.code {
+white-space: pre; display: block; font-family: monospace;
+background-color: #F0F0F0;
+padding: 4px;
+border-style: double;
+border-color: gray;
+overflow:auto;
+}
+
+/* Skin Mods*/
+#content
+{
+ background-image: url("");
+ background-color:white;
+}
+#contentBodyCenter
+{
+ background-image: url("");
+ background-color: white;
+}
+#column
+{
+ background-image: url("");
+ background-color: white;
+}
+#column a.rounded
+{
+background-color:white;
+}
+div.entryDate h3
+{
+ text-transform: lowercase;
+ color: #E0DFD6;
+}
+
+div.entry h4
+{
+ text-transform: lowercase;
+ border-bottom: dashed 1px;
+}
+
+div.blogrollfolder
+{
+ margin-top: 0px;
+    margin-right-value: 0px;
+    margin-bottom: 0px;
+    margin-left-value: 0px;
+    margin-left-ltr-source: physical;
+    margin-left-rtl-source: physical;
+    margin-right-ltr-source: physical;
+    margin-right-rtl-source: physical;
+    padding-top: 0px;
+    padding-right-value: 0px;
+    padding-bottom: 0px;
+    padding-left-value: 0px;
+    padding-left-ltr-source: physical;
+    padding-left-rtl-source: physical;
+    padding-right-ltr-source: physical;
+    padding-right-rtl-source: physical;
+    font-size: 1.2em;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(170, 170, 170);
+
+   font-family: palatino,georgia,times new roman,serif;
+    color: rgb(102, 102, 0);
+    font-weight: normal;
+    padding-top: 3px;
+    padding-right-value: 3px;
+    padding-bottom: 3px;
+    padding-left-value: 3px;
+    padding-left-ltr-source: physical;
+    padding-left-rtl-source: physical;
+    padding-right-ltr-source: physical;
+    padding-right-rtl-source: physical;
+    margin-top: 0px;
+    letter-spacing: 0.1em;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    -x-background-x-position: 0%;
+    -x-background-y-position: 0%;
+    -moz-background-clip: initial;
+    -moz-background-origin: initial;
+    -moz-background-inline-policy: initial;
+    text-transform: uppercase;
+}
+#leftmenu .blogrollitem, #leftmenu .blogrollfolder
+{
+font-size : 0.75em;
+}

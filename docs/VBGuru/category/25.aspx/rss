@@ -1,0 +1,164 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:copyright="http://blogs.law.harvard.edu/tech/rss" xmlns:image="http://purl.org/rss/1.0/modules/image/">
+    <channel>
+        <title>Thinkin</title>
+        <link>http://blogs.pingpoet.com/VBGuru/category/25.aspx</link>
+        <description>Miscellaneous thoughts that are blog worthy.</description>
+        <language>en-US</language>
+        <copyright>Luc</copyright>
+        <managingEditor>lucas @ hardbarger . com</managingEditor>
+        <generator>Subtext Version 1.9.4.78</generator>
+        <item>
+            <title>Last PingPoet Blog Post</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2007/01/22/29977.aspx</link>
+            <description>This is my last blog post as VBGuru. I've switched to blogger now. If you are still interested in what I have to say from time to time, please update your feed readers: &lt;a href="http://hardbarger.blogspot.com"&gt;http://hardbarger.blogspot.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;PingPoet has been good to me (thanks &lt;a title="Scott's Blog" href="http://blogs.pingpoet.com/overflow"&gt;Scott&lt;/a&gt;). I'm just consolidating, that's all. :)&lt;br /&gt;&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/29977.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2007/01/22/29977.aspx</guid>
+            <pubDate>Tue, 23 Jan 2007 03:04:14 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2007/01/22/29977.aspx#feedback</comments>
+            <slash:comments>20</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/29977.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/29977.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>White and Nerdy</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/10/30/29972.aspx</link>
+            <description>&lt;p&gt;This is my new theme song!!&lt;/p&gt;
+
+&lt;embed style="width:400px; height:326px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=1384277706451157121&amp;amp;hl=en" flashvars=""&gt; &lt;/embed&gt;&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/29972.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/10/30/29972.aspx</guid>
+            <pubDate>Mon, 30 Oct 2006 20:54:25 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/10/30/29972.aspx#feedback</comments>
+            <slash:comments>159</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/29972.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/29972.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Here is my XNA blog post</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/10/27/29878.aspx</link>
+            <description>I've been hearing a lot about &lt;a href="http://www.google.com/search?q=what+is+xna"&gt;XNA&lt;/a&gt;. If you are a tech blogger, you have probably noticed as well. I didn't quite understand all the hype at first, but now it's starting to catch my attention... deficit disor... I'm thirsty. Anyway, I'm seeing what all the hype is about &lt;a href="http://msdn.microsoft.com/directx/xna/faq/"&gt;now&lt;/a&gt; and decided to write my very own post about XNA. This way, someone might find my dorky blog if they do a feed search for XNA. Let me know if this was you. :)&lt;br /&gt;
+&lt;br /&gt;
+Today I was doing my blog role and ran across a really &lt;a href="http://www.alanphipps.com/VisualBasicdotNET-XNA.html"&gt;cool post&lt;/a&gt; with oodles of useful code to get someone up and running with XNA using Visual Basic 2005. I must admit that when using .NET, I prefer using C#. Outside of .NET however, I'm a hard core VB junky at heart (hence the &lt;a href="http://blogs.pingpoet.com/vbguru"&gt;VBGuru&lt;/a&gt; blog name (nice little self pingback there)). There are tons of C# samples using XNA as well. I remember seeing a whole bunch of them a couple of weeks ago when it was first announced, but didn't feel like digging through old feeds to find them before posting this. Just do a &lt;a href="http://www.google.com/search?q=xna+c%23+%2Bsamples"&gt;google search&lt;/a&gt; if you are interested... they're out there!&lt;br /&gt;
+&lt;br /&gt;
+I do plan to get into this sometime and tinker around with it. I've always wanted to be a game developer and now with XNA, it sets the "standards" (damn MS) for developing games in .NET. I just need to find some free time between workin, farmin, daddin, bloggin, and livin. Maybe tomorrow. :)&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/29878.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/10/27/29878.aspx</guid>
+            <pubDate>Fri, 27 Oct 2006 21:30:52 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/10/27/29878.aspx#feedback</comments>
+            <slash:comments>20</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/29878.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/29878.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Multithreaded Map Reduce Implementation</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/10/20/29412.aspx</link>
+            <description>&lt;a href="http://labs.google.com/papers/mapreduce.html"&gt;Map Reduce&lt;/a&gt; is a very cool concept. If you have never heard of it or never took the time to really figure out how it works, I highly recommend &lt;a href="http://en.wikipedia.org/wiki/MapReduce"&gt;doing so now&lt;/a&gt;. I remember reading about it when &lt;a href="http://www.joelonsoftware.com/items/2006/08/01.html"&gt;Joel mentioned it&lt;/a&gt; on his blog. When I first realized how it all worked, I must admit there was some confusion as to when and why I would ever use this. I now see the power of it and can think of many situations where I could use this. It really is an ingenious concept.&lt;br /&gt;
+&lt;br /&gt;
+I was catching up on my blog role today and ran across &lt;a href="http://software.ericsink.com"&gt;Eric Sink&lt;/a&gt;'s &lt;a href="http://software.ericsink.com/entries/multicore_map.html"&gt;multithreaded approach&lt;/a&gt; to this problem. The scariest part about the whole thing is that I downloaded his code and actually &lt;em&gt;understand&lt;/em&gt; every line of code. If you would have shown me this code 6 months ago, I would have laughed in your face. It's amazing how fast you learn new concepts and not even realize it when working in the computer field. I love my &lt;span style="text-decoration: line-through;"&gt;job&lt;/span&gt; &lt;span style="text-decoration: line-through;"&gt;hobby&lt;/span&gt; passion. :)&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/29412.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/10/20/29412.aspx</guid>
+            <pubDate>Sat, 21 Oct 2006 06:29:45 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/10/20/29412.aspx#feedback</comments>
+            <slash:comments>20</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/29412.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/29412.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Google Code Search</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/10/05/28428.aspx</link>
+            <description>This should be a very handy search utility once I figure out the trick to using it: &lt;a href="http://www.google.com/codesearch"&gt;http://www.google.com/codesearch&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+I haven't really had much luck with it yet becuase I'm not sure what to search for. Typically when I run into a problem, I just press F1, read up on a topic and tinker with it. I was talking with &lt;a href="http://blogs.pingpoet.com/overflow" title="Scott's Blog"&gt;Scott&lt;/a&gt; today on a certain &lt;a href="http://www.google.com/codesearch?hl=en&amp;amp;lr=&amp;amp;q=aggregate+auto+datatype+null+lang%3Ac%23&amp;amp;btnG=Search"&gt;aggregation issue in c#&lt;/a&gt; and i found a couple of "potential" links that might help find a solution to the problem. Who knows, worth a try. :)&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/28428.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/10/05/28428.aspx</guid>
+            <pubDate>Thu, 05 Oct 2006 08:47:30 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/10/05/28428.aspx#feedback</comments>
+            <slash:comments>5</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/28428.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/28428.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>The Hmuan Biran</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/10/03/28421.aspx</link>
+            <description>Well, ok... The subject is a little much, but this is pretty cool... Try to read the sentence below as fast as you can. You'll be amazed at how good you do:&lt;br /&gt;
+&lt;br /&gt;
+&lt;div style="margin-left: 40px;"&gt;&lt;span style="font-weight: bold;"&gt;i cdnuolt blveiee taht I cluod aulaclty uesdnatnrd waht I was rdanieg. The phaonmneal pweor of the hmuan mnid, aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it dseno't mtaetr in waht oerdr the ltteres in a wrod are, the olny iproamtnt tihng is taht the frsit and lsat ltteer be in the rghit pclae. The rset can be a taotl mses and you can sitll raed it whotuit a pboerlm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe. Azanmig huh? yaeh and I awlyas tghuhot slpeling was ipmorantt! if you can raed tihs forwrad it.&lt;/span&gt;&lt;/div&gt;
+&lt;br /&gt;
+Weried ins't it? Who ndees slpel chckeer aynawy?&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/28421.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/10/03/28421.aspx</guid>
+            <pubDate>Wed, 04 Oct 2006 04:25:20 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/10/03/28421.aspx#feedback</comments>
+            <slash:comments>7</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/28421.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/28421.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Google Reader</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/09/29/27997.aspx</link>
+            <description>For all of those of you that use BlogLines, FeedDemon, RSSBandit, GreatNews, Sage, or any other blog reader, I have to say that you might give &lt;a title="The ultimate search engine" href="http://www.google.com"&gt;google&lt;/a&gt; Reader a chance now. Today they released a major usability enhanced version that (I feel) will be very hard to compete with. &lt;br /&gt;
+&lt;br /&gt;
+See for yourself: &lt;a href="http://reader.google.com"&gt;http://reader.google.com&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+I have quickly switched back to &lt;a title="The ultimate search engine" href="http://www.google.com"&gt;google&lt;/a&gt; Reader as of... now. &lt;br /&gt;
+&lt;br /&gt;
+1.) I started into my blogging experience using some Outlook Add-in that treated blog posts like "Newsgroup Threads". It might have been some early versions of &lt;a href="http://www.newsgator.com"&gt;NewsGator&lt;/a&gt;, I dont' recall exactly. &lt;br /&gt;
+2.) Then I used &lt;a href="http://www.rssbandit.org"&gt;RSS Bandit&lt;/a&gt; for a long time&lt;br /&gt;
+3.) About a year or two ago, I switched to &lt;a href="http://www.feeddemon.com/"&gt;FeedDemon&lt;/a&gt; and used it for a while. I really liked FeedDemon, but it had some usability issues. FeedDemon was a hassle for me because I blog on my laptop and on my home pc and the read/unread settings are stored locally. When I travelled or had a big day of catching up on one of the pc's, I had to manually sync my settings.&lt;br /&gt;
+4.) Once &lt;a title="The ultimate search engine" href="http://www.google.com"&gt;google&lt;/a&gt; released their online blog reader, I rejoiced and quickly began using it because I could keep all my RSS feeds updated in one place... online. There were some major usability issues. There was no "newspaper" view, no way to update a group of feeds as "read" without going through them one by one, and some other minor usability issues here and there.&lt;br /&gt;
+5.) &lt;a title="Issam's Blog" href="http://blogs.pingpoet.com/thoughtchain"&gt;Issam&lt;/a&gt; uses GreatNews and I decided to switch a few weeks ago and try to get used to it. He told me about it almost a year ago and I installed it tried it out, but didn't notice anything &lt;span style="font-style: italic;"&gt;too &lt;/span&gt;impressive. It reminded me a lot of FeedDemon only it had "Labels". I didn't think it was cool enough to swtich from my licensed FeedDemon (which I was using at the time). Well, since he has been so loyal to the app all this time, I basically decided to see past it's "local storage" problem and give it another try... &lt;a title="The ultimate search engine" href="http://www.google.com"&gt;google&lt;/a&gt; Readers' usability was getting a bit old and they hadn't made any significant updates yet. I was contetemplating an idea to just write a script to sync my read/unread posts. I was just starting to get used to it's interface and keyboard shortcuts... Until...&lt;br /&gt;
+6.) &lt;a title="The ultimate search engine" href="http://www.google.com"&gt;google&lt;/a&gt; Reader fixed their usability problems. I've switched back. :)&lt;br /&gt;
+&lt;br /&gt;
+Thanks &lt;a title="The ultimate search engine" href="http://www.google.com"&gt;google&lt;/a&gt; Gods!&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/27997.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/09/29/27997.aspx</guid>
+            <pubDate>Fri, 29 Sep 2006 09:45:56 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/09/29/27997.aspx#feedback</comments>
+            <slash:comments>2</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/27997.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/27997.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>T.E.D.D.Y.</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/09/17/27300.aspx</link>
+            <description>&lt;p&gt;I found this cool &lt;a href="http://lazyrussian.com/2006/09/15/freaky-friday-episode-3-teddy/"&gt;link&lt;/a&gt; while doing my blog role. This is an app that will allow you to draw a 2d image on it's surface and it will transform it into a 3d image automatically (no buttons, nothing). &lt;br /&gt;
+&lt;/p&gt;
+&lt;embed src="http://video.google.com/googleplayer.swf?docId=5053834549541822378&amp;amp;hl=en" type="application/x-shockwave-flash" id="VideoPlayback" style="width: 400px; height: 326px;"&gt;&lt;/embed&gt;         &lt;br /&gt;
+It is currently a Java Applet, if anybody ports it to .NET, please let me know. :) Likewise, If I end up porting it to .NET, I'll post a blog and &lt;span style="font-style: italic;"&gt;you &lt;/span&gt;know.&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/27300.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/09/17/27300.aspx</guid>
+            <pubDate>Sun, 17 Sep 2006 18:39:24 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/09/17/27300.aspx#feedback</comments>
+            <slash:comments>14</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/27300.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/27300.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>How do you measure success?</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/09/14/27201.aspx</link>
+            <description>I was catching up on my blog role and came across a very simple image described the 'definition' of success. &lt;br /&gt;
+&lt;a href="http://headrush.typepad.com/creating_passionate_users/2006/09/success_should_.html" target="_blank"&gt;&lt;img align="middle" src="http://headrush.typepad.com/photos/uncategorized/measuringsuccess.jpg" alt="Diagram of Success" /&gt;&lt;/a&gt;&lt;br /&gt;
+I couldn't agree more. After seeing that image and thinking about my life, I feel very successful.&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/27201.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/09/14/27201.aspx</guid>
+            <pubDate>Fri, 15 Sep 2006 03:39:23 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/09/14/27201.aspx#feedback</comments>
+            <slash:comments>11</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/27201.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/27201.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>b. young designs</title>
+            <link>http://blogs.pingpoet.com/VBGuru/archive/2006/09/09/26596.aspx</link>
+            <description>
+		&lt;a href="http://www.byoungdesigns.com/bio.html"&gt;Bonnie Young&lt;/a&gt; is a very talented artist and a very close friend. She now has a 'working' website that displays all of her work and it is just a fraction of what she is capable of. Jennifer and I asked her to paint our girls bedroom this summer and it turned out &lt;b&gt;amazing&lt;/b&gt;! If you think I'm kidding, look for yourself:&lt;br /&gt;&lt;br /&gt;&lt;img src="http://www.byoungdesigns.com/images/murals/daizy.jpg" /&gt;&lt;br /&gt;and&lt;br /&gt;&lt;img src="http://www.byoungdesigns.com/images/murals/daizy1.jpg" /&gt;&lt;br /&gt;What blew me away about this room is that Jennifer and I stood around and talk to her while she was painting and she just kept conversation with us as she was painting it. It was really incredible to see her work, it is just so easy for her. &lt;br /&gt;&lt;br /&gt;Anyway, the reason for this blog post is to inform the world that her site is up and running. I actually placed my first order a couple of days ago. Of course, we got the '&lt;a href="http://www.byoungdesigns.com/cards/nature/nc0066.html"&gt;Daizy Card Set&lt;/a&gt;' so that we can send out cards when Daizianna is born (any day now). Her site was a long time in the making; Corey (her husband, and my good friend) gave it a full overhaul and got it looking very nice. He added a shopping cart and posted pictures of some of the amazing work that she can do. The site probably only shows about 20% of her full portfolio (I'm assuming). I've seen her portfolio and was blown away. &lt;br /&gt;&lt;br /&gt;Bonnie has done work &lt;a href="http://www.crateandbarrel.com/"&gt;Crate and Barrel&lt;/a&gt; and &lt;a href="http://www.longaberger.com/"&gt;Longaberger&lt;/a&gt; just to name a few of her bigger clients. She has been an art teacher for our local school district (Licking Valley) and she is just a great person. If you are into crafty things and appreciate raw talent, I definitely encourage you to check out &lt;a href="http://www.byoungdesigns.com"&gt;byoungdesigns.com&lt;/a&gt;.&lt;br /&gt;&lt;img src="http://blogs.pingpoet.com/VBGuru/aggbug/26596.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Luc</dc:creator>
+            <guid>http://blogs.pingpoet.com/VBGuru/archive/2006/09/09/26596.aspx</guid>
+            <pubDate>Sat, 09 Sep 2006 07:21:52 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/VBGuru/archive/2006/09/09/26596.aspx#feedback</comments>
+            <slash:comments>6</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/VBGuru/comments/commentRss/26596.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/VBGuru/services/trackbacks/26596.aspx</trackback:ping>
+        </item>
+    </channel>
+</rss>

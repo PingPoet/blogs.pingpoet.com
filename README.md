@@ -13,5 +13,6 @@ install httrack:
 
 Command:
 
-    httrack http://blogs.pingpoet.com  -O "./"  -%v2
-    httrack http://blogs.pingpoet.com  -O "./docs","./logs"  -%v2
+    httrack http://blogs.pingpoet.com  -O "./httrack" -%v2
+    rsync -av --delete-excluded ./httrack/blogs.pingpoet.com/ ./docs --exclude *.tmp
+    
