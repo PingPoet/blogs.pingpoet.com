@@ -1,0 +1,143 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:copyright="http://blogs.law.harvard.edu/tech/rss" xmlns:image="http://purl.org/rss/1.0/modules/image/">
+    <channel>
+        <title>Misc</title>
+        <link>http://blogs.pingpoet.com/thoughtChain/category/17.aspx</link>
+        <description>Misc</description>
+        <language>en-US</language>
+        <copyright>Issam Elbaytam</copyright>
+        <managingEditor>issam@elbaytam.org</managingEditor>
+        <generator>Subtext Version 1.9.4.78</generator>
+        <item>
+            <title>Update and VS2k5 Installed</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/10/29/13409.aspx</link>
+            <description>&lt;P&gt;wow! it's a been such a long time since I blogged.&amp;nbsp; Part of it is beging extremely busy and the other being extremely lazy :)&amp;nbsp; &lt;/P&gt;
+&lt;P&gt;Anyway, I just finished downloading RTM images of&amp;nbsp;VS2k5 and SS2k5.&amp;nbsp; In preparation for this I had upgraded my laptop (Toshiba Portege M200) to 2GB RAM and 120GB Hard drive.&amp;nbsp; I scrubbed it clean, installed WinXP Pro, the bare essentials (Edit Plus, Total Commander, Process Explorer, Zoom+, NetCaptor, FeedDemon).&amp;nbsp; Then I installed VMWare Workstation.&amp;nbsp; I allocated 60GB partition for Virtual Machines.&amp;nbsp;&amp;nbsp; I created a base VM with WinXP pro and the latest windows updates, I had it set up with 1GB RAM and 30GB virtual hard disk.&amp;nbsp; Then I started spawning new VMs from this.&amp;nbsp; I created a clone called junk: stays clean and is used for experiments and testing install scripts on a clean machine.&amp;nbsp;&amp;nbsp; I created another for Office2k3 and VS2k3, this is my main dev VM.&amp;nbsp; I cloned that one too, for junk expriments.&amp;nbsp; Now that I downloaded VS2k5 i cloned the base and installed O2k3 + VS2k5 + SS2k5 to create my new 2k5 dev VM.&amp;nbsp; Everything went very smoothly and the VMs are fast enough for development.&lt;/P&gt;
+&lt;P&gt;I have a common HD partition called Stuff where I keep all my data files (outlook, OneNote, ...) all VMs have access to this partition through &lt;STRONG&gt;shared folders&lt;/STRONG&gt;.&amp;nbsp; So whichever VM i am using i can access my email, notes and files.&amp;nbsp; In addition, i used TweakUI to redirect the Shell Folders from the OS VM hard drive to this common partition so anything i save to &amp;#8220;My Documents&amp;#8220; ends up shared for all VMs.&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Now I have 10 VMs for a variety of purposes.&amp;nbsp; Demo VMs (VS6, VS2k3 and VS2k5).&amp;nbsp; Dev VMs (same), Junk (same) and base.&amp;nbsp; This will hopefully keep things clean and organized.&amp;nbsp; I hate running different versions of VS / SS on the same machine, this allows me to completely isolate everything without having to reboot my machine to switch partitions.&amp;nbsp; I can also play around with new software without impacting my main dev VMs.&lt;/P&gt;
+&lt;P&gt;Why not use Virtual PC instead?&amp;nbsp; No reason really, i just like VMWare and have been using it for a while.&amp;nbsp; Everyone else at the office uses Virtual PC and they like it.&amp;nbsp; The same process can be followed with either of these products.&lt;/P&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/13409.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/10/29/13409.aspx</guid>
+            <pubDate>Sat, 29 Oct 2005 09:41:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/10/29/13409.aspx#feedback</comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/13409.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/13409.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>TechEd: Off to a bad start</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/06/2454.aspx</link>
+            <description>&lt;P&gt;Got here last night, hotel (Sheraton Studio City) is OK but not on the conference shuttle list.&amp;nbsp; The rest of the crew coming in from Columbus, OH&amp;nbsp;got stuck in Atlanta all night.&amp;nbsp; They had to take a flight to Tampa this morning and drive from there to Orlando.&amp;nbsp; Of course that meant I had to get up at 7:30am set up the booth all by myself.&amp;nbsp; That sucked!&amp;nbsp;&amp;nbsp; For those who know me, getting up at 7:30am&amp;nbsp;WAS the hard part :)&lt;/P&gt;
+&lt;P&gt;Anyway, with little help from a friend at /n Software I was able to put it together.&amp;nbsp; Now I am waiting for the crew to get here, hopefully before the exhibit hall opens at noon.&lt;/P&gt;
+&lt;P&gt;TechEd is sold out this year, so it will be very busy.&amp;nbsp; I can see the crowds in the halls and outside the Orlando convention center.&amp;nbsp; WiFi is available everywhere but it is very slow.&amp;nbsp; I can barely get my email.&lt;/P&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/2454.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/06/2454.aspx</guid>
+            <pubDate>Mon, 06 Jun 2005 18:44:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/06/2454.aspx#feedback</comments>
+            <slash:comments>9</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/2454.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/2454.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Heading to TechEd tomorrow</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/04/2452.aspx</link>
+            <description>&lt;UL&gt;
+&lt;LI&gt;Laptop is ready and loaded with demos.&lt;/LI&gt;
+&lt;LI&gt;Empty duffel bag, to collect junk :)&lt;/LI&gt;
+&lt;LI&gt;Have a nice dinner invitation from the VSM crew at&amp;nbsp;&lt;A href="http://www.google.com/local?num=50&amp;amp;hl=en&amp;amp;lr=lang_ar|lang_en&amp;amp;c2coff=1&amp;amp;safe=off&amp;amp;q=christini%27s+ristorante+italiano&amp;amp;near=Orlando,+FL&amp;amp;sa=X&amp;amp;oi=locald&amp;amp;radius=0.0&amp;amp;latlng=28538056,-81379444,2374768140630605367"&gt;Christini's&lt;/A&gt; which is an awesome Italian Restaurant, highly recommended.&lt;/LI&gt;
+&lt;LI&gt;Monday we have to get up early to set up the booth.&amp;nbsp; It will be a very long and exciting day.&lt;/LI&gt;&lt;/UL&gt;
+&lt;P&gt;Stop by at Data Dynamics' booth if you're attending.&lt;/P&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/2452.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/04/2452.aspx</guid>
+            <pubDate>Sun, 05 Jun 2005 00:19:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/04/2452.aspx#feedback</comments>
+            <slash:comments>39</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/2452.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/2452.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>StarWars - Episode III (done)</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/05/22/2000.aspx</link>
+            <description>&lt;P&gt;Yesterday I took my three girls and boy to see StarWars.&amp;nbsp; LOVED IT :)&amp;nbsp; The girls seems to have enjoyed it at least as much as I did.&amp;nbsp; And Adam kept pointing to Darth Vader and saying &amp;#8220;Mean Guy&amp;#8221;&amp;nbsp; :)&lt;/P&gt;
+&lt;P&gt;My feeling is that this made the first two worth it, it tied everything together nicely.&amp;nbsp; CG was incredible as usual.&amp;nbsp; This will definately set a new standard for everyone else to follow.&amp;nbsp; &lt;/P&gt;
+&lt;P&gt;Anyway, can't wait to have the whole set on DVD (1-6) so I can spend a whole weekend watching them back to back.&amp;nbsp;&lt;/P&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/2000.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/05/22/2000.aspx</guid>
+            <pubDate>Sun, 22 May 2005 15:00:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/05/22/2000.aspx#feedback</comments>
+            <slash:comments>58</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/2000.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/2000.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>MSDN TV, WebCasts Wish</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/11/14/943.aspx</link>
+            <description>&lt;p&gt;I wish MS would make the MSDN TV and WebCasts available on cable networks as an actual TV program.&amp;nbsp; They could buy the "Paid Programming" on some channels or use the public access channels to provide the webcasts and MSDN TV episodes.&amp;nbsp; This would be better than the small sized wmv files (which they don't make easy to download - i know about NetTransport trick).&amp;nbsp; I can record them using TiVo or MediaPC.&lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/943.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/11/14/943.aspx</guid>
+            <pubDate>Sun, 14 Nov 2004 23:07:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/11/14/943.aspx#feedback</comments>
+            <slash:comments>48</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/943.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/943.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Reading GMail atom feeds</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/21/881.aspx</link>
+            <description>&lt;p&gt;now I can read my gmail inbox using FeedDemon.&amp;nbsp; I set up a channel as follows:&lt;/p&gt;&lt;p&gt;&lt;a href="http://user:password@gmail.google.com/gmail/feed/atom/"&gt;http://user:password@gmail.google.com/gmail/feed/atom/&lt;/a&gt;&lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/881.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/21/881.aspx</guid>
+            <pubDate>Thu, 21 Oct 2004 07:17:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/21/881.aspx#feedback</comments>
+            <slash:comments>54</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/881.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/881.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Google Desktop - Update</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/21/880.aspx</link>
+            <description>&lt;p&gt;I uninstalled &lt;a href="http://desktop.google.com/"&gt;google desktop&lt;/a&gt; and reinstalled &lt;a href="http://www.x1.com/"&gt;X1&lt;/a&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;I've tried X1 in the past and liked it but it suffered from frequent crashes.&amp;nbsp; Now I have an updated version and it is going much better.&amp;nbsp; I can find anything in my 9GB+ source code collection in a blink.&amp;nbsp; I have set to index once a day instead of every hour.&amp;nbsp; The files are mostly static and few change daily, so that works well.&lt;/p&gt;&lt;p&gt;I do not use it to index outlook or anything else because outlook is a pain as it is, i don't need the added headache of dealing with add-ins.&lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/880.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/21/880.aspx</guid>
+            <pubDate>Thu, 21 Oct 2004 07:16:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/21/880.aspx#feedback</comments>
+            <slash:comments>57</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/880.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/880.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Woody's thoughts</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/20/874.aspx</link>
+            <description>&lt;p&gt;[via: Blake]&amp;nbsp; Thanks!&amp;nbsp; Very cool.&lt;/p&gt;&lt;p&gt;&lt;a href="http://blogs.pingpoet.com/kidtheexperiment/archive/2004/10/19/873.aspx"&gt;Woody Harrelson's Thoughts From Within&lt;/a&gt; &lt;/p&gt;&lt;p&gt;Check out this great poem by Woody Harrelson&lt;/p&gt;&lt;p&gt;There is a nice animation that goes along with it&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.voiceyourself.com/03_thoughtsfromwithin/03_movie.php"&gt;http://www.voiceyourself.com/03_thoughtsfromwithin/03_movie.php&lt;/a&gt;&lt;/p&gt;&lt;img height="1" src="http://blogs.pingpoet.com/kidtheexperiment/aggbug/873.aspx" width="1"&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/874.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/20/874.aspx</guid>
+            <pubDate>Wed, 20 Oct 2004 09:11:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/20/874.aspx#feedback</comments>
+            <slash:comments>84</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/874.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/874.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Political Ads</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/19/872.aspx</link>
+            <description>&lt;p&gt;&lt;a href="http://p2p-politics.org/"&gt;p2p-politics&lt;/a&gt; released the ads made by citizens for move-on.org,&amp;nbsp; some of these people are extremely talented.&amp;nbsp; These are my favorite:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="http://p2p-politics.org/cgi-bin/wrapper.cgi?title=Child%27s%20Pay&amp;amp;url=http://www.archive.org/download/moveon_bushin30seconds_1911/1911.mpg"&gt;Child's play&lt;/a&gt; (gives my chills)&lt;/li&gt;&lt;li&gt;&lt;a href="http://p2p-politics.org/cgi-bin/wrapper.cgi?title=In%20My%20Country&amp;amp;url=http://www.archive.org/download/moveon_bushin30seconds_1387/1387.mpg"&gt;In My Country&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://p2p-politics.org/cgi-bin/wrapper.cgi?title=Gone%20in%2030%20Seconds&amp;amp;url=http://www.archive.org/download/moveon_bushin30seconds_123/123.mpg"&gt;Gone in 30 seconds&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://p2p-politics.org/cgi-bin/wrapper.cgi?title=Army%20of%20One%20%28with%20Narration%29&amp;amp;url=http://www.archive.org/download/moveon_bushin30seconds_2149/2149.mpg"&gt;Army of One&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/872.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/19/872.aspx</guid>
+            <pubDate>Wed, 20 Oct 2004 03:39:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/19/872.aspx#feedback</comments>
+            <slash:comments>42</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/872.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/872.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Jon Stewart on CNN</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/16/862.aspx</link>
+            <description>Jon Stewart of the &lt;a href="http://www.comedycentral.com/tv_shows/thedailyshowwithjonstewart/"&gt;Daily Show&lt;/a&gt; - which I love to watch- was on CNN's &lt;a href="http://www.cnn.com/CNN/Programs/crossfire/"&gt;CrossFire&lt;/a&gt; -which I also like.&amp;nbsp; The &lt;a href="http://transcripts.cnn.com/TRANSCRIPTS/0410/15/cf.01.html"&gt;exchange&lt;/a&gt; was absolutely hilarious.&amp;nbsp; Jon raised an issue that is important to all pundit shows, they don't really have constructive debates, instead they bring these people to mouth off their standard sound bites and never answer a question.&amp;nbsp;&amp;nbsp; They should keep hammering until they get an honest answer.&amp;nbsp; Chris Mathews does some of that on HardBall but we need more, much more, we need straight answers.&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/862.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/16/862.aspx</guid>
+            <pubDate>Sat, 16 Oct 2004 13:14:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/16/862.aspx#feedback</comments>
+            <slash:comments>87</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/862.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/862.aspx</trackback:ping>
+        </item>
+    </channel>
+</rss>

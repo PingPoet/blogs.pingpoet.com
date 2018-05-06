@@ -1,0 +1,136 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:copyright="http://blogs.law.harvard.edu/tech/rss" xmlns:image="http://purl.org/rss/1.0/modules/image/">
+    <channel>
+        <title>Dev - Web</title>
+        <link>http://blogs.pingpoet.com/thoughtChain/category/2.aspx</link>
+        <description>Web Development - CSS, DHTML, XML</description>
+        <language>en-US</language>
+        <copyright>Issam Elbaytam</copyright>
+        <managingEditor>issam@elbaytam.org</managingEditor>
+        <generator>Subtext Version 1.9.4.78</generator>
+        <item>
+            <title>Mono and Mozilla - Powerful Duo</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2006/02/14/18898.aspx</link>
+            <description>Zac Bowling has  a post about JavaScript 2.0 [ http://zacbowling.com/blog/2006/02/13/just-cuz/ ] 
+In it he makes a powerful comment "Embedding mono into mozilla might be a solution worth looking into."   I've been thinking about this quite a bit lately and I think it is something that both the mozilla and mono teams should pursue immediately.  Mozilla has created a great multi-platform infrastructure that's taking the web by storm.  However, the low level programming is not main-stream because it's C++ and the high-level XUL+JScript is not powerful enough.  
+
+Adding mono into the mix would give XUL a set of compiled languages, multi-platform runtime and a huge set of usable class libraries.   This mix would be a great answer to XAML.  This would be the ultimate solution for true multiplatform applications that use the web infrastructure (NOT THE BROWSER) sensibly and deliver fast and rich client experience.   I am not a huge fan of using the browser for web applications, i see the whole ASP.NET Atlas and AJAX in general as patches that try to make the browser into something it was never meant to do.  XUL was a step in the right direction but it needs a lot more support from professional programming languages and environments.&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/18898.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2006/02/14/18898.aspx</guid>
+            <pubDate>Tue, 14 Feb 2006 20:26:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2006/02/14/18898.aspx#feedback</comments>
+            <slash:comments>2</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/18898.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/18898.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>ActiveReports usage on the web</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/12/16/16177.aspx</link>
+            <description>&lt;A href="http://www.datadynamics,com"&gt;&lt;a title="" href="http://www.datadynamics.com" &gt;ActiveReports&lt;/a&gt;&lt;/A&gt; report documents have a default title of &amp;#8220;&lt;STRONG&gt;&lt;EM&gt;&lt;a title="" href="http://www.datadynamics.com" &gt;ActiveReports&lt;/a&gt; Document&lt;/EM&gt;&lt;/STRONG&gt;&amp;#8221;.&amp;nbsp; Many users do not change that default value and it ends up&amp;nbsp;part of&amp;nbsp;HTML and PDF exports.&amp;nbsp; I used this bit of information to see how our customers use &lt;a title="" href="http://www.datadynamics.com" &gt;ActiveReports&lt;/a&gt; on the web.&amp;nbsp;&amp;nbsp; A simple &lt;A href="http://www.google.com/search?q=ActiveReports+Document+&amp;amp;start=0"&gt;google search&lt;/A&gt; for the string yielded 10 pages of results.&amp;nbsp; In those results, some cool reports that are available on the web as example uses of our popular product.&amp;nbsp; Cool.&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/16177.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/12/16/16177.aspx</guid>
+            <pubDate>Sat, 17 Dec 2005 05:17:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/12/16/16177.aspx#feedback</comments>
+            <slash:comments>1</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/16177.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/16177.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Latest Spam Attack</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/12/2856.aspx</link>
+            <description>&lt;A href="http://blogs.pingpoet.com/overflow"&gt;Scott&lt;/A&gt;&amp;nbsp;recently added CAPTCHA to pingpoet blogs to reduce comment spam.&amp;nbsp; However, today I noticed that I got a ton of Pingback spam.&amp;nbsp; My guess is that some automated tool is subscribed to my feed and it automatically creates pingbacks to all my posts.&amp;nbsp; Took me forever to delete all the SPAM entries.&amp;nbsp;&amp;nbsp; .Text delete operation is the worst I've seen, it does not allow multiple selection and requires two confirmations, that's three page refreshes to delete a single entry.&amp;nbsp;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/2856.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/12/2856.aspx</guid>
+            <pubDate>Sun, 12 Jun 2005 15:47:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/06/12/2856.aspx#feedback</comments>
+            <slash:comments>9</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/2856.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/2856.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Google's Web Accelerator Flaw and Web Applications</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2005/05/09/1831.aspx</link>
+            <description>&lt;P&gt;Recently Google released Web Accelerator add-on that prefetches pages based on links in the page you're viewing.&amp;nbsp; This might work well in news site or something, but in a browser web application it had a negative effect.&amp;nbsp;&amp;nbsp;A link might be to some application function that should not be fetched automatically such as &amp;#8220;Add Record&amp;#8221; or &amp;#8220;Delete&amp;#8221;.&amp;nbsp; I know it's not completely Google's fault and that there are proper ways of writing&amp;nbsp;code instead of a simple hyperlink to avoid this.&amp;nbsp; But the fact is many web apps are written that way and it back-fired with Google's add-on.&amp;nbsp;&amp;nbsp; &lt;/P&gt;
+&lt;P&gt;I think this is really a fundemantal flaw in using the browser for writing web applications.&amp;nbsp; The browser never made sense to me as a web application host, as a developer you spend more time fighting the platform(s) than focusing on your own application logic.&lt;/P&gt;
+&lt;P&gt;Here at &lt;A href="http://www.datadynamics.com"&gt;Data Dynamics&lt;/A&gt; we're working on something that we hope will fix that.&amp;nbsp; It is very top secret now.&amp;nbsp; However, rest assured that I will have a lot more to say about it in few months :)&lt;/P&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/1831.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2005/05/09/1831.aspx</guid>
+            <pubDate>Mon, 09 May 2005 18:20:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2005/05/09/1831.aspx#feedback</comments>
+            <slash:comments>43</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/1831.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/1831.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>ScottGu: Testing ASP.NET 2.0 and Visual Web Developer</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/30/912.aspx</link>
+            <description>&lt;p&gt;ScottGu &lt;a href="http://blogs.msdn.com/scottgu/archive/2004/10/28/249458.aspx"&gt;provides detailed answers&lt;/a&gt;&amp;nbsp;to questions about ASP.NE 2.0 testing process.&amp;nbsp; Questions like:&lt;/p&gt;&lt;p&gt;How do you build and track 105,000 test cases and 505,000 test scenarios?&lt;span style="mso-spacerun: yes"&gt;&amp;nbsp; &lt;/span&gt;How big is the test team in relation to the dev team? What tools do we use to write and run them? &lt;span style="mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;What is the process used to manage all of this?&lt;span style="mso-spacerun: yes"&gt;&amp;nbsp; &lt;/span&gt;Etc, Etc.&lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/912.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/30/912.aspx</guid>
+            <pubDate>Sat, 30 Oct 2004 16:45:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/30/912.aspx#feedback</comments>
+            <slash:comments>41</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/912.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/912.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>Google Desktop - Wish List</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/16/861.aspx</link>
+            <description>&lt;p&gt;I like it but I want more&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Limit search to specific folders.&lt;/li&gt;&lt;li&gt;Index my cs (csharp source) files.&lt;/li&gt;&lt;li&gt;An API to access the search results.&amp;nbsp; I don't like the fact that the only thing I can do with my results is to see the list and launch the default app.&amp;nbsp; I might want to copy, move, delete or view in notepad.&amp;nbsp; That would be possible if I could write a small app to search and display the files list with "context menu" to take action on those files.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/861.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/16/861.aspx</guid>
+            <pubDate>Sat, 16 Oct 2004 08:44:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/10/16/861.aspx#feedback</comments>
+            <slash:comments>55</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/861.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/861.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>MS Releases Authentication &amp; Access Control tool for ASP.NET </title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/09/09/789.aspx</link>
+            <description>&lt;p&gt;[Via: &lt;a href="http://www.theserverside.net/news/thread.tss?thread_id=28578"&gt;TheServerSide.NET&lt;/a&gt;]&lt;/p&gt;&lt;p&gt;Microsoft has released a &lt;a href="http://download.microsoft.com/download/6/c/9/6c96682c-8449-4112-a089-3b98c0035d0c/AuthDiag.msi"&gt;new tool&lt;/a&gt; to help identify authentication and access control issues in ASP.NET for Web sites, FTP sites, virtual directories, Web directories, and files. This tool not only will help to identify current issues but can be used to monitor authentication failures as they happen. &lt;/p&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/789.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/09/09/789.aspx</guid>
+            <pubDate>Thu, 09 Sep 2004 11:05:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/09/09/789.aspx#feedback</comments>
+            <slash:comments>47</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/789.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/789.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>ISS Compression and Mapping All Requests to ASP.NET</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/09/08/785.aspx</link>
+            <description>&lt;a href="http://scottwater.com/blog/archive/2004/09/08/IIS6_HttpCompress_NotSoFast"&gt;IIS 6.0 Compression and Mapping All Requests to ASP.Net&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;&lt;p&gt;"Mapping all requests to the aspnet_isapi.dll does come with a couple caveats:&lt;/P&gt;&lt;OL&gt;&lt;LI&gt;Default Documents no longer work &lt;LI&gt;Static files need to be handled by ASP.Net &lt;LI&gt;...&lt;/LI&gt;&lt;/OL&gt;&lt;P&gt;- &lt;A href="http://scottwater.com/blog/"&gt;Scott Watermasysk&lt;/A&gt;&lt;/P&gt;&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/785.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/09/08/785.aspx</guid>
+            <pubDate>Wed, 08 Sep 2004 16:11:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/09/08/785.aspx#feedback</comments>
+            <slash:comments>69</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/785.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/785.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>ASP.NET Authentication Process - The Big Picture</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/08/30/747.aspx</link>
+            <description>Srinath &lt;A href="http://weblogs.asp.net/srinathv/archive/2003/12/11/42838.aspx"&gt;shows us the big picture&lt;/A&gt; from browser to IIS and back.&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/747.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/08/30/747.aspx</guid>
+            <pubDate>Mon, 30 Aug 2004 22:35:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/08/30/747.aspx#feedback</comments>
+            <slash:comments>50</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/747.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/747.aspx</trackback:ping>
+        </item>
+        <item>
+            <title>ASP.NET Config Files - Summary</title>
+            <link>http://blogs.pingpoet.com/thoughtChain/archive/2004/08/30/744.aspx</link>
+            <description>A nice &lt;A href="http://www.dotnetjohn.com/articles.aspx?articleid=24"&gt;post on dotNetJohn&lt;/A&gt; summarizing the tags in machine.config and web.config.&lt;img src="http://blogs.pingpoet.com/thoughtChain/aggbug/744.aspx" width="1" height="1" /&gt;</description>
+            <dc:creator>Issam Elbaytam</dc:creator>
+            <guid>http://blogs.pingpoet.com/thoughtChain/archive/2004/08/30/744.aspx</guid>
+            <pubDate>Mon, 30 Aug 2004 22:28:00 GMT</pubDate>
+            <comments>http://blogs.pingpoet.com/thoughtChain/archive/2004/08/30/744.aspx#feedback</comments>
+            <slash:comments>48</slash:comments>
+            <wfw:commentRss>http://blogs.pingpoet.com/thoughtChain/comments/commentRss/744.aspx</wfw:commentRss>
+            <trackback:ping>http://blogs.pingpoet.com/thoughtChain/services/trackbacks/744.aspx</trackback:ping>
+        </item>
+    </channel>
+</rss>
