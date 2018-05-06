@@ -14,5 +14,4 @@ install httrack:
 Command:
 
     httrack http://blogs.pingpoet.com  -O "./httrack" -%v2
-    rsync -av --delete-excluded ./httrack/blogs.pingpoet.com/ ./docs --exclude *.tmp
-    
+    rsync -a --stats --delete-excluded ./httrack/blogs.pingpoet.com/ ./docs --exclude *.tmp

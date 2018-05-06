@@ -1,1 +1,2 @@
 **/*.tmp
+/httrack/hts-cache/
