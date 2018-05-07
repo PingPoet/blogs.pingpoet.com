@@ -12,6 +12,7 @@ install httrack:
     brew install httrack
 
 Command:
+
     # note the complex `-` exclude patterns are to only include archive directories for 2003-2007
     httrack http://blogs.pingpoet.com  -O "./httrack" -%v2 '-*/archive/200[0-2]/* -*/archive/200[8-9]*/' '-*/archive/20[1-9][0-9]/*' '-*/archive/2[1-9][0-9][0-9]/*' '-*/archive/[3-9][0-9][0-9][0-9]*/' '-*/archive/[0-1][0-9][0-9][0-9]/*'
 
@@ -28,3 +29,9 @@ That downloads to `./httrack/blogs.pingpoet.com`. To copy those to the right pla
     # works but does a full copy: rsync -a --stats --delete-excluded ./httrack/blogs.pingpoet.com/ ./docs --exclude *.tmp
     # links, git lndir from https://opensource.apple.com/source/X11/X11-0.46.4/lndir.sh.auto.html
     ./link.sh
+
+
+## Error checking
+To only check for errors:
+
+    httrack http://blogs.pingpoet.com  -O "./httrack" -%v2 --testsite
