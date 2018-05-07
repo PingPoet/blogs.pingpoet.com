@@ -34,4 +34,4 @@ That downloads to `./httrack/blogs.pingpoet.com`. To copy those to the right pla
 ## Error checking
 To only check for errors:
 
-    httrack http://blogs.pingpoet.com  -O "./httrack" -%v2 --testsite
+    httrack http://blogs.pingpoet.com  -O "./httrack-error-check" -%v2 --testsite
