@@ -1,0 +1,57 @@
+HTTrack3.49-2 launched on Sun, 06 May 2018 21:27:12 at http://blogs.pingpoet.com -*/archive/200[0-2]/*%20-*/archive/200[8-9]*/ -*/archive/20[1-9][0-9]/* -*/archive/2[1-9][0-9][0-9]/* -*/archive/[3-9][0-9][0-9][0-9]*/ -*/archive/[0-1][0-9][0-9][0-9]/*
+(httrack http://blogs.pingpoet.com -O ./httrack -%v2 "-*/archive/200[0-2]/* -*/archive/200[8-9]*/" -*/archive/20[1-9][0-9]/* -*/archive/2[1-9][0-9][0-9]/* -*/archive/[3-9][0-9][0-9][0-9]*/ -*/archive/[0-1][0-9][0-9][0-9]/* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:27:32	Warning: 	Retry after error 500 (500 Internal Server Error) at link blogs.pingpoet.com/MainFeed.aspx (from blogs.pingpoet.com/)
+21:27:50	Error: 	"Not Found" (404) at link blogs.pingpoet.com/kidtheexperiment/ (from blogs.pingpoet.com/)
+21:27:50	Error: 	"Not Found" (404) at link blogs.pingpoet.com/MollysKitchen/ (from blogs.pingpoet.com/)
+21:28:46	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/RussiaTripJuly2006.kmz (from blogs.pingpoet.com/)
+21:28:56	Error: 	"Not Found" (404) at link blogs.pingpoet.com/topbgo.gif (from blogs.pingpoet.com/Style.css)
+21:28:58	Warning: 	Retry after error 500 (500 Internal Server Error) at link blogs.pingpoet.com/MainFeed.aspx (from blogs.pingpoet.com/)
+21:36:14	Error: 	"Bad Request" (400) at link blogs.pingpoet.com/overflow/archive/2004/02/21/383.aspx">said (from blogs.pingpoet.com/overflow/archive/2005/06/02/2449.aspx)
+21:36:14	Error: 	"500 Internal Server Error" (500) after 2 retries at link blogs.pingpoet.com/MainFeed.aspx (from blogs.pingpoet.com/)
+21:36:14	Error: 	"Not Found" (404) at link blogs.pingpoet.com/skins/Piyo/Images/blank.gif (from blogs.pingpoet.com/skins/Piyo/style.css)
+21:36:14	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/POST (from blogs.pingpoet.com/WebResource.axd?d=vT1yz21OBJxBgCt3OM9vt4Y4jX88BPYiwkNtAfZuXqXphi6ccxTRjVFJnDscDk1pKotIsoE5gziAablpwXXNVTZ1pNg1&t=635294807132453548)
+21:36:32	Warning: 	Found for blogs.pingpoet.com/overflow/archive/2006/03/16/20079.aspx
+21:36:32	Warning: 	File has moved from blogs.pingpoet.com/overflow/archive/2006/03/16/20079.aspx to /SystemMessages/FileNotFound.aspx
+21:37:37	Error: 	"Not Found" (404) at link blogs.pingpoet.com/kidtheexperiment/archive/2004/10/19/viagra (from blogs.pingpoet.com/kidtheexperiment/archive/2004/10/19/873.aspx)
+21:37:37	Error: 	"Not Found" (404) at link blogs.pingpoet.com/kidtheexperiment/archive/2004/10/19/advance (from blogs.pingpoet.com/kidtheexperiment/archive/2004/10/19/873.aspx)
+21:37:45	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/Russia 2006 Photo Wrapup/style/index.png (from blogs.pingpoet.com/overflow/pubfiles/photos/Russia 2006 Photo Wrapup/style/f-spot-simple.css)
+21:37:45	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/Russia 2006 Photo Wrapup/style/prev.png (from blogs.pingpoet.com/overflow/pubfiles/photos/Russia 2006 Photo Wrapup/style/f-spot-simple.css)
+21:37:45	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/Russia 2006 Photo Wrapup/style/next.png (from blogs.pingpoet.com/overflow/pubfiles/photos/Russia 2006 Photo Wrapup/style/f-spot-simple.css)
+21:37:52	Error: 	"Not Found" (404) at link blogs.pingpoet.com/SystemMessages/FileNotFound.aspx (from blogs.pingpoet.com/overflow/archive/2006/03/16/20079.aspx)
+21:37:52	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/novosibirsk/style/index.png (from blogs.pingpoet.com/overflow/pubfiles/photos/novosibirsk/style/f-spot-simple.css)
+21:37:52	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/novosibirsk/style/prev.png (from blogs.pingpoet.com/overflow/pubfiles/photos/novosibirsk/style/f-spot-simple.css)
+21:37:52	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/novosibirsk/style/next.png (from blogs.pingpoet.com/overflow/pubfiles/photos/novosibirsk/style/f-spot-simple.css)
+21:38:09	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/stpetersburgcity/style/index.png (from blogs.pingpoet.com/overflow/pubfiles/photos/stpetersburgcity/style/f-spot-simple.css)
+21:38:09	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/stpetersburgcity/style/prev.png (from blogs.pingpoet.com/overflow/pubfiles/photos/stpetersburgcity/style/f-spot-simple.css)
+21:38:09	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/pubfiles/photos/stpetersburgcity/style/next.png (from blogs.pingpoet.com/overflow/pubfiles/photos/stpetersburgcity/style/f-spot-simple.css)
+21:38:28	Warning: 	Moved Permanently for blogs.pingpoet.com/thoughtChain
+21:38:28	Warning: 	File has moved from blogs.pingpoet.com/thoughtChain to http://blogs.pingpoet.com/thoughtChain/
+21:38:28	Error: 	Unable to save file ./httrack/blogs.pingpoet.com/thoughtChain: Is a directory
+21:38:28	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/archive/2004/09/06/projectcensored.org (from blogs.pingpoet.com/overflow/archive/2004/09/06/782.aspx)
+21:38:28	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/archive/2004/09/projectcensored.org (from blogs.pingpoet.com/overflow/archive/2004/09/06.aspx)
+21:38:28	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/archive/2004/07/15/www.apple.com/quicktime/qtv/wwdc04/ (from blogs.pingpoet.com/overflow/archive/2004/07/15/641.aspx)
+21:38:28	Error: 	"Not Found" (404) at link blogs.pingpoet.com/overflow/archive/2004/07/www.apple.com/quicktime/qtv/wwdc04/ (from blogs.pingpoet.com/overflow/archive/2004/07/15.aspx)
+21:38:28	Warning: 	Moved Permanently for blogs.pingpoet.com/jeemster
+21:38:28	Warning: 	File has moved from blogs.pingpoet.com/jeemster to http://blogs.pingpoet.com/jeemster/
+21:38:28	Error: 	Unable to save file ./httrack/blogs.pingpoet.com/jeemster: Is a directory
+21:38:28	Error: 	"Not Found" (404) at link blogs.pingpoet.com/kidtheexperiment/archive/2004/08/31/viagra (from blogs.pingpoet.com/kidtheexperiment/archive/2004/08/31/760.aspx)
+21:38:28	Error: 	"Not Found" (404) at link blogs.pingpoet.com/kidtheexperiment/archive/2004/08/31/advance (from blogs.pingpoet.com/kidtheexperiment/archive/2004/08/31/760.aspx)
+21:38:29	Error: 	"Not Found" (404) at link blogs.pingpoet.com/images/blogs_pingpoet_com/kidtheexperiment/40/t_esbg.jpg (from blogs.pingpoet.com/kidtheexperiment/gallery/40.aspx)
+21:38:29	Warning: 	Moved Permanently for blogs.pingpoet.com/PhilBlog
+21:38:29	Warning: 	File has moved from blogs.pingpoet.com/PhilBlog to http://blogs.pingpoet.com/PhilBlog/
+21:38:29	Error: 	Unable to save file ./httrack/blogs.pingpoet.com/PhilBlog: Is a directory
+21:38:31	Error: 	"Not Found" (404) at link blogs.pingpoet.com/images/blogs_pingpoet_com/kidtheexperiment/40/r_esbg.jpg (from blogs.pingpoet.com/kidtheexperiment/gallery/image/3.aspx)
+21:38:31	Error: 	"Not Found" (404) at link blogs.pingpoet.com/images/blogs_pingpoet_com/kidtheexperiment/40/o_esbg.jpg (from blogs.pingpoet.com/kidtheexperiment/gallery/image/3.aspx)
+21:52:28	Warning: 	engine: warning: unserialize error for blogs.pingpoet.com/PhilBlog/archive/2038/08.aspx (./httrack/blogs.pingpoet.com/PhilBlog/archive/2038/08.html), file disappeared: No such file or directory
+21:52:28	Warning: 	engine: warning: unserialize error for blogs.pingpoet.com/overflow/archive/2038/09.aspx (./httrack/blogs.pingpoet.com/overflow/archive/2038/09.html), file disappeared: No such file or directory
+21:56:48	Warning: 	engine: warning: unserialize error for blogs.pingpoet.com/overflow/archive/1972/11.aspx (./httrack/blogs.pingpoet.com/overflow/archive/1972/11.html), file disappeared: No such file or directory
+21:56:48	Warning: 	engine: warning: unserialize error for blogs.pingpoet.com/PhilBlog/archive/1973/05.aspx (./httrack/blogs.pingpoet.com/PhilBlog/archive/1973/05.html), file disappeared: No such file or directory
+
+HTTrack Website Copier/3.49-2 mirror complete in 29 minutes 36 seconds : 3500 links scanned, 3464 files written (68816586 bytes overall), 2801 files updated [16218320 bytes received at 9131 bytes/sec], 56555910 bytes transferred using HTTP compression in 2799 files, ratio 27%
+(32 errors, 14 warnings, 0 messages)

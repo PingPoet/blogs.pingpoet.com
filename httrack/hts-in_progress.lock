@@ -1,7 +1,0 @@
-Mirror in progress since Sun, 06 May 2018 14:24:22 .. please wait!
-httrack http://blogs.pingpoet.com -O ./httrack -%v2 
-To pause the engine: create an empty file named 'hts-stop.lock'
-PID=30805
-UID=501
-GID=501
-START=1525641862

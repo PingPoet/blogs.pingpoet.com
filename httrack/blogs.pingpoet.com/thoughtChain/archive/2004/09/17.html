@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	
+<!-- Mirrored from blogs.pingpoet.com/thoughtChain/archive/2004/09/17.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 May 2018 04:33:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	ThoughtChain - Friday, September 17, 2004 Entries
+</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="author" content="Issam Elbaytam" /><meta name="Generator" content="Subtext Version 1.9.4.78" /><link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="../../../Rss.aspx" /><link type="text/css" rel="stylesheet" href="../../../../skins/_System/csharp.css"></link>
+<link type="text/css" rel="stylesheet" href="../../../../skins/_System/commonstyle.css"></link>
+<link type="text/css" rel="stylesheet" href="../../../../skins/_System/commonlayout.css"></link>
+<link media="print" type="text/css" rel="stylesheet" href="../../../../Skins/WPSkin/print.css"></link>
+<link id="MainStyle" type="text/css" rel="stylesheet" href="../../../../skins/WPSkin/style.css" /><link id="Rsd" rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../rsd.xml.ashx" /><link id="AtomLink" title="RSS" type="application/rss+xml" rel="alternate" href="../../../Rss.aspx" /><script src="../../../../Scripts/common.js" type="text/javascript"></script><script src="../../../../Scripts/tableEffects.js" type="text/javascript"></script><script src="../../../../Scripts/BlogInfo.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var subtextAllowedHtmlTags = ['a', 'b', 'strong', 'blockquote', 'i', 'em', 'u', 'strike', 'super', 'sub', 'code'];
+			var subtextBlogInfo = new blogInfo('../../../../index.html', '/thoughtChain/" />');
+		</script>
+		</head>
+	<body>
+		<form name="Form1" method="post" action="http://blogs.pingpoet.com/thoughtChain/archive/2004/09/17.aspx" id="Form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../../../WebResourceca6f.js?d=vT1yz21OBJxBgCt3OM9vt4Y4jX88BPYiwkNtAfZuXqXphi6ccxTRjVFJnDscDk1pKotIsoE5gziAablpwXXNVTZ1pNg1&amp;t=635294807132453548" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+</div>
+			
+<div id="main">
+	<div id="header">
+		
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" title="The Title Of This Blog." href="../../../Default.html">ThoughtChain</a></h1>
+<p id="tagline">Issam Elbaytam - ThoughtChain.Serialize()</p>
+	</div>
+
+	<div id="mainBody">
+		<div id="content">
+			
+					
+<p class="date">
+	Friday, September 17, 2004		  
+	<a id="ArchiveDay_ascx_SingleDay_ImageLink" Title="Day Archive" href="17.html" style="display:inline-block;border-width:0px;height:15px;width:12px;">#</a>
+</p>
+
+
+		<div class="post">
+			<h2><a id="ArchiveDay_ascx_SingleDay_DayList_ctl00_TitleUrl" title="Click To View Entry." href="17/811.html">XMLComments, and large component documentation</a></h2>
+			
+			<a href="http://west-wind.com/weblog/posts/879.aspx">Rick Strahl summarizes my discussion with him on XmlDocs in source vs repository</a>. &nbsp;<br /><br /><p class="MsoNormal" style="MARGIN: 0in 0in 0pt"><font face="Verdana" size="2">I wanted to clarify&nbsp;few things about how we (at <a href="http://www.datadynamics.com/">DataDynamics</a>) develop and document our components.&nbsp; </font></p><ul><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">We typically have a team of 2-3 developers working on different parts of the project.</div></li><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">Developers are not necessarily in the same location and they would not be connected to our network all the time, they check out the code they're working on and code away whether they are at the office, at home or traveling.&nbsp; They connect back to the network to check in their code (and documentation) into StarTeam.</div></li><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">Developers are required to document the headers of public types and members using xml documentation standards introduced by the C# compiler.&nbsp; The C# compiler generates warnings in our release build if we're missing any documentation.&nbsp; And it generates the XML files required for intellisense in VS.NET.</div></li><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">The XMLDocs compiler checks are great, however, the format and location of the comments are a mess.&nbsp; The documentation written by developers has to be edited by our documentation personnel.&nbsp; They do not have -and shouldn't have- access to our source code repository.</div></li><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">XMLDocs has a special tag that allows storing the comments in a separate file.&nbsp; &lt;include&gt;.&nbsp; The format of the file is open and it can be any xml that produces valid content from an XPath expression.&nbsp; We chose to create an .xmldoc file for each source file.&nbsp; Each node the xmldoc file would represent a type or a member in our source code file.&nbsp; Think of it like pairing the cs/resx in the case of winforms.</div></li><ul><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">Rick's example is different from how we write our files, we do not keep a node for the project because some of our files can be used in multiple projects.&nbsp; Also, we do not&nbsp;have a node for the namespace either.&nbsp; Each node has a unique id that is "namespace.type.member"&nbsp; if the member is overloaded we simply add a #1..n at the end.&nbsp; The xpath would be <a href="mailto:'@name=&quot;namespace.type.member#1..n&quot;">'@name="namespace.type.member#1..n"</a></div></li></ul><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">Keeping the xml content in separate files allows us to work with it just like we do with the code, write it in a distributed independent fashion, version it, and control access to the source code repository.</div></li><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">Once our developers have completed their part of code/doc, our documentation persons edit the documenation before we generate the assemblies/intellisense xml.&nbsp;&nbsp; We use the same xml to generate the library reference help and integrate those topics with our user guides to create the final MSHelp 2.0 files and PDF manuals.&nbsp; We are currently using DocumentX and HelpStudio from InnovaSys for this final step.</div></li></ul><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">What I described here is very similar to how Microsoft documents the framework.&nbsp; You can see the &lt;include&gt; tags in the Rotor source code.</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">All this works great, however, editing XML non-WYSIWYG in a separate file (without a schema) is error-prone and can be made a lot easier if there was a simple add-in that popups a dialog to edit the comment and place it in the proper associated file and&nbsp;place the &lt;include&gt; tag in the source code.</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">wwHelp and DocumentX both have nice add-ins to edit the comments but they miss the piece of how important keeping the source separate from docs is and the need to keep the xml comments&nbsp;sync'ed to the code to make use of the compiler generated warnings.</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">They are both great products and we do use them on different projects to write our user guide and how-to topics and for final integration of the xmldoc with the user guide to create the final mshelp files.</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">&nbsp;</p><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">Rick (of <a href="http://www.west-wind.com/">wwHelp</a>) and Richard (of <a href="http://www.innovasys.co.uk/">Innovasys</a>) try to fit the xml docs directly with their products.&nbsp; I think what they should do is two things:</p><ol><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">Simple add-in like I described above to allow WYSIWYG editing the xmldoc and optionally inserting the comment or the include tag into the code.&nbsp; Various options can be made as part of the project properties, i.e. where to place the documentation (code vs include) and location of the include files.</div></li><li><div class="MsoNormal" style="MARGIN: 0in 0in 0pt">The repository would come into play after the C# compiler has generated the XML intellisense file and it would simply import the file into the project.</div></li></ol><p class="MsoNormal" style="MARGIN: 0in 0in 0pt">Both products do #2 very well, so I am hoping they would introduce a good solution for #1.</p><span style="COLOR: blue; FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="FONT-FAMILY: 'Courier New'"><span style="COLOR: blue; FONT-FAMILY: 'Courier New'"><p></p></span></span></span></span></span></span></span></span></span></span>
+			
+			<p class="postfoot">		
+				posted @ <a href="17/811.html" title = "Permanent link to this post">Friday, September 17, 2004 4:11 PM</a> | <a href="17/811.html#feedback" title = "comments, pingbacks, trackbacks">Feedback (60)</a>
+			</p>
+		</div>
+	
+		<div class="post">
+			<h2><a id="ArchiveDay_ascx_SingleDay_DayList_ctl01_TitleUrl" title="Click To View Entry." href="17/810.html">Political: Top 22 Reasons to vote for George W. Bush</a></h2>
+			
+			<p>Hilarious. LOL</p><p><a href="http://codeblogs.ximian.com/blogs/tberman/archives/000336.html">[Via: Todd Berman]</a> <br /></p><p>Although these are numbered, they are in no particular order.</p><ol><li>You wake up in November hating the entire world.</li><li>You always wanted to move to Canada, and the draft could be just the impetus you needed.</li><li>You determine the leader of America based on how good they look in a fireman's hat.</li><li>You need to know just how long his administration can go before it turns Powell into it's latest scapegoat.</li><li>You want to see just how high this deficit can get before someone in the White House admits we have a problem.</li><li>You can't get enough of that wacky National Security Advisor's latest hijinks.</li><li>You live in Florida, because you figure if your vote isn't going to count, you might as well vote for the predetermined winner.</li><li>Your hope that maybe if he wins this time, his father will jump out of the plane without a parachute this time.</li><li>Another four years of neo-conservatives can't be worse than the first four.</li><li>You think future presidents doing cocaine at Camp David is totally a good idea, and want to make sure Bush's daughters get more chances to prove how 'presidential' they can be.</li><li>For some reason, the youth of America has always bothered you, and you would like to see more of their innocent lives lost in a pointless conflict.</li><li>After 4 years of wonderfully funny flash animations, you have no idea how you can spend 8 hours at work without humour at George Bush's expense.</li><li>He may have caused most of the rest of the world to lose what little respect it still had for America, but at least he didn't sleep with his intern.</li><li>If George Bush is good enough for Jesus, he is good enough for you.</li><li>You live in Tennessee, just got your thumbs, are relatively unsure how to use them, and missed the button to vote Yes on Prop 742 - Alien Sterility/Dentistry Program (Homage to the late master of comedy).</li><li>Baby killing is good. Jodie Foster told you so.</li><li>Pat Buchanan isn't running and you want the next best thing. Helms/Buchanan in 08!</li><li>You are scared shitless.</li><li>You are unable to resist the temptation to vote for Dick/Bush...</li><li>Dick Cheney promised to show you his underground lair.</li><li>Only thing better than one car wreck is two car wrecks.</li><li>You were born <a href="http://fullduplex.org/tardblog/">mentally retarded</a>.</li></ol><p>&nbsp;</p>
+			
+			<p class="postfoot">		
+				posted @ <a href="17/810.html" title = "Permanent link to this post">Friday, September 17, 2004 12:59 PM</a> | <a href="17/810.html#feedback" title = "comments, pingbacks, trackbacks">Feedback (49)</a>
+			</p>
+		</div>
+	
+
+
+				
+		</div>
+		<div id="sidebar">
+			
+				
+<h3>Blog Stats</h3>
+	<ul>
+		<li>Posts - 273
+		<li>Stories - 0
+		<li>Comments - 0
+		<li>Trackbacks - 16040
+	</li>
+</ul>
+				
+<h3>My Links</h3>
+<ul>
+	<li><a id="MyLinks1_HomeLink" title="Link to the home page." href="../../../Default.html">Home</a></li>
+	<li><a id="MyLinks1_ContactLink" accesskey="9" title="Contact form." href="../../../contact.html">Contact</a></li>
+	<li><a id="MyLinks1_Syndication" title="Subscribe to this feed." href="../../../Rss.aspx">Syndication</a><a id="MyLinks1_XMLLink" title="Subscribe to this feed." href="../../../Rss.aspx"><img src="../../../../images/xml.gif" style="border-width:0px;" /></a></li>
+	<li><a id="MyLinks1_Admin" title="Login Form." href="../../../login.html">Login</a></li>
+</ul>
+				
+		<h3>Blog Roll</h3>
+		
+				<ul>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl01_Link" title="" rel="external" href="http://blogs.msdn.com/Allend">AllenD</a> <a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl01_RssLink" title="Subscribe to AllenD" href="http://blogs.msdn.com/Allend/Rss.aspx">(rss)</a></li>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl02_Link" title="" rel="external" href="http://blogs.msdn.com/brada/">Brad Abrams</a> <a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl02_RssLink" title="Subscribe to Brad Abrams" href="http://blogs.msdn.com/brada/rss.aspx">(rss)</a></li>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl03_Link" title="" rel="external" href="http://www.simplegeek.com/">Chris Anderson</a> <a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl03_RssLink" title="Subscribe to Chris Anderson" href="http://www.simplegeek.com/blogxbrowsing.asmx/GetRss?">(rss)</a></li>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl04_Link" title="" rel="external" href="http://blogs.msdn.com/craigskibo/">Craig Skibo</a> <a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl04_RssLink" title="Subscribe to Craig Skibo" href="http://blogs.msdn.com/craigskibo/Rss.aspx">(rss)</a></li>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl05_Link" title="" rel="external" href="http://blogs.msdn.com/dr._ex/">Dr. Ex</a> <a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl05_RssLink" title="Subscribe to Dr. Ex" href="http://blogs.msdn.com/dr._ex/rss.aspx">(rss)</a></li>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl06_Link" title="" rel="external" href="http://www.larkware.com/">Larkware</a> <a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl06_RssLink" title="Subscribe to Larkware" href="http://www.larkware.com/larkware2.xml">(rss)</a></li>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl00_LinkList_ctl07_Link" title="" href="../../../../index.html">PingPoet Bloggers</a> </li>
+			
+				</ul>
+			
+	
+		<h3>Work</h3>
+		
+				<ul>
+			
+				<li><a id="CategoryDisplay1_Categories_CatList_ctl01_LinkList_ctl01_Link" title="" rel="external" href="http://www.datadynamics.com/">Data Dynamics</a> </li>
+			
+				</ul>
+			
+	
+
+				
+				
+		<h3>Post Categories</h3>
+		
+				<ul>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl01_Link" title="" href="../../../category/1.html">Dev - .net</a> <a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl01_RssLink" title="Subscribe to Dev - .net" href="../../../category/1.aspx/rss">(rss)</a></li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl02_Link" title="" href="../../../category/16.html">Dev - .net WishList</a> <a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl02_RssLink" title="Subscribe to Dev - .net WishList" href="../../../category/16.aspx/rss">(rss)</a></li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl03_Link" title="" href="../../../category/2.html">Dev - Web</a> <a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl03_RssLink" title="Subscribe to Dev - Web" href="../../../category/2.aspx/rss">(rss)</a></li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl04_Link" title="" href="../../../category/17.html">Misc</a> <a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl04_RssLink" title="Subscribe to Misc" href="../../../category/17.aspx/rss">(rss)</a></li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl05_Link" title="" href="../../../category/3.html">Personal - Politics</a> <a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl05_RssLink" title="Subscribe to Personal - Politics" href="../../../category/3.aspx/rss">(rss)</a></li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl06_Link" title="" href="../../../category/4.html">Technology</a> <a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl06_RssLink" title="Subscribe to Technology" href="../../../category/4.aspx/rss">(rss)</a></li>
+			
+				</ul>
+			
+	
+		<h3>Archives</h3>
+		
+				<ul>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl01_Link" title="" href="../../2006/02.html">February, 2006 (1)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl02_Link" title="" href="../../2005/12.html">December, 2005 (1)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl03_Link" title="" href="../../2005/10.html">October, 2005 (1)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl04_Link" title="" href="../../2005/06.html">June, 2005 (4)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl05_Link" title="" href="../../2005/05.html">May, 2005 (7)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl06_Link" title="" href="../../2005/04.html">April, 2005 (2)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl07_Link" title="" href="../../2005/02.html">February, 2005 (1)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl08_Link" title="" href="../../2005/01.html">January, 2005 (9)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl09_Link" title="" href="../12.html">December, 2004 (2)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl10_Link" title="" href="../11.html">November, 2004 (6)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl11_Link" title="" href="../10.html">October, 2004 (16)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl12_Link" title="" href="../09.html">September, 2004 (20)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl13_Link" title="" href="../08.html">August, 2004 (38)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl14_Link" title="" href="../07.html">July, 2004 (1)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl15_Link" title="" href="../06.html">June, 2004 (4)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl16_Link" title="" href="../05.html">May, 2004 (7)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl17_Link" title="" href="../04.html">April, 2004 (4)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl18_Link" title="" href="../03.html">March, 2004 (42)</a> </li>
+			
+				<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl19_Link" title="" href="../02.html">February, 2004 (107)</a> </li>
+			
+				</ul>
+			
+	
+
+				
+<p id="footer">
+	Powered by: 
+	<br />
+	<a id="Footer1_Hyperlink2" title="Powered By Subtext" NAME="Hyperlink1" href="http://sourceforge.net/projects/subtext/"><img title="Powered By Subtext" src="../../../../images/PoweredBySubtext85x33.png" style="border-width:0px;" /></a>
+	<a id="Footer1_Hyperlink3" title="Powered By ASP.NET" NAME="Hyperlink1" href="http://asp.net/"><img title="Powered By ASP.NET" src="../../../../images/PoweredByAsp.Net.gif" style="border-width:0px;" /></a>
+	<br />
+	Copyright &copy; Issam Elbaytam
+</p>
+			
+		</div>
+	</div>
+
+	<div class="eofp">
+	</div>
+</div>
+
+		
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+	</body>
+
+<!-- Mirrored from blogs.pingpoet.com/thoughtChain/archive/2004/09/17.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 May 2018 04:33:48 GMT -->
+</html>
