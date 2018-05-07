@@ -1,1 +1,1 @@
-../httrack/blogs.pingpoet.com/Opml.aspx
+../httrack/blogs.pingpoet.com/opml.aspx
