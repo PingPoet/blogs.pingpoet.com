@@ -1,5 +1,5 @@
 #! /bin/bash
-ROOT=docs
+ROOT=docs/Scripts
 find "$ROOT" -type l -regex .*[A-Z].* | while read f
 do
    lc=$(echo ${f} | tr A-Z a-z)
@@ -12,3 +12,6 @@ do
    lc=$(echo ${f} | tr A-Z a-z)
    git mv -v ${lc} ${lc%?}
 done
+
+# NOTE: this left some files over with underscores and I used following to fix that:
+# find -E . -regex .*_ | while read f; do mv $f ${f%?}; done
